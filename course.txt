@@ -1,0 +1,30 @@
+Skill : Java Fullstack Developer
+----
+	Frontend	:	UI Developer
+	Middleware	:	Middleware Developer
+	Backend		:	Database Developer
+========================================
+Frontend : UI Developers
+Languages
+	HTML		Angular	
+	CSS			Bootstrap
+	Javascript	Typescript
+========================================
+Middleware : Middleware Developer
+Languages
+	Java
+		J2SE
+		J2EE
+		SpringBoot
+		Hibernate
+========================================
+Backend : Database Developer
+Language
+	SQL
+	PL/SQL
+	
+	Oracle DB
+	MySQL DB
+========================================
+Methodologies : Agile
+========================================
