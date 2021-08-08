@@ -1,0 +1,13 @@
+What is LAN?
+What is IP?
+What is TCP?
+What is Http? 
+What is Https?
+What is WWW?
+What is URI?
+What is HTML?
+World Wide Web?
+Web Browser?
+What is difference between Website and Web Application?
+What is difference between HTML4 and HTML5?
+What is meta data?
