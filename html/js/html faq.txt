@@ -1,0 +1,29 @@
+what is html?
+what is meaning of <!DOCTYPE html>?
+doctype tells that this document is html 5 standards and  browser compaile acording to the html 5 standards and display it 
+https://www.w3schools.com/tags/tag_doctype.asp
+what is the proper way to write html element?
+start tag at start and ending tag at end in between content 
+what is diffrence between inline, internal and external? 
+what is diffrence between absulute url and relative url?
+     if we want to refer a resource(maybe html,css,javascript,image) from external site that is called absulute url
+if we want refer a resource(maybe html, css,javascript,image) from over site that is called relative url.
+What is diffrence between span and div?
+	if we want to start in a same line and ends with in the same line then we have to use span
+ 	if want to group some elements and if you want in new line then we use div tag
+What is disadvantages iframe?
+What is responsive web design?
+responsive means the page that you doveloped has to be rendered in mobile,tablet, laptop and computer, irrspective of screen size and resolution and without having horzontal scrol.
+what is the disadvantages of table tag?
+if we want to achive responsive table we cannot achive through table tag.
+To create responsive table we have to use media quries.
+== 
+What is the current version of JS?
+ES6
+What is diffrence between ES5 and ES6?
+What are the features add in ES6?
+What is document in js?
+	document is a js object for whole html document will resides in document object.
+what is action, event?
+Where to keep js code?
+based upon our requriment we have to keep js code in header, body and footer.

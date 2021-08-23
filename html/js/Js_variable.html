@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>declare the varible</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <P id="demo4"></P>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+       <script>
+            var x, y, z;
+            var x = 5;
+            var y = 6;
+            var z = x + y;
+            document.getElementById("demo").innerHTML = "the value of z is:" + z;
+        </script>
+        
+        <script>
+            var pi = 3.14;
+            var person = "dileep";
+            var name = 'hello';
+            document.getElementById("demo1").innerHTML = pi + "<br>" + person +"<br>" + name;
+        </script>
+        <script>
+            var pi = 3.14, person = "dileep", name = 'hello';
+            document.getElementById("demo2").innerHTML = pi + "<br>" + person + "<br>" + name;
+        </script>
+        <script>
+            var carname;
+            document.getElementById("demo3").innerHTML = carname;
+        </script>
+        <script>
+            var x = "Jhon" + " " + "Deo";
+            document.getElementById("demo4").innerHTML = x;
+        </script>
+        <script>
+            var x = "5" + 6 + 4;
+            document.getElementById("demo5").innerHTML = x;
+        </script>
+        <script>
+            var $ = 5 + 6 + "4";// $ sign is treated as name in JS
+            document.getElementById("demo6").innerHTML = $;
+
+        </script>
+
+    </body>
+</html>

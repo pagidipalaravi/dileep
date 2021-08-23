@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        #fname {
+          
+          font-size: medium;
+          }
+               
+
+      </style>
+    </head>
+  <body>
+      <h3>FORM</h3>
+    <form>
+      <fieldset>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="date">Date of birth</label><br>
+        <input type="date" ><br>
+        <label for="text">gender</label><br>
+        <select id="gender" name="gender">
+          <option value="">  </option> 
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="other">other</option>
+        </select><br>
+        <label for="pnumber">phone number:</label><br>
+        <input type="tel" id="pnumber" pattern="1234567890"><br>
+        <label for="Email">Email:</label><br>
+        <input type="email" id="email" ><br>
+        <label for="branch">select branch:</label><br> 
+        <select id="branch" name="branch">
+          <option value="mech">mechnical eng</option>
+          <option value="cse">computer science eng</option>
+          <option value="eee">eltrical & elotronics eng</option> 
+        </select><br>
+        <label for="passedout">passed out year</label><br>
+        <select id="passedout" name="passedout" >
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>  
+        </select><br><br>
+        <input type="button" onclick="alert('success full submit')" value="submit" >
+        <input type="reset">      
+      </fie  ldset>
+    </form> 
+  </body>  
+</html>     

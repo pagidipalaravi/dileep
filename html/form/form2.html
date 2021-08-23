@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <h3>personal details</h3>
+        <div class="row">
+            <div class="column">
+                <label>Prefix:</label>
+                <select id="prefix" name="prefix">
+                    <option value="select">select</option>
+                    <option value="MR.">MR.</option>
+                    <option value="MS.">MS.</option>
+                </select>    
+            </div>
+            <div class="column">
+                <label>First Name :</label>
+                <input type="text" id="fname" name="fname" value="" placeholder="Enter the first name">
+            </div>
+      
+            <div class="column">
+                <label>middle Name :</label>
+                <input type="text" id="mname" name="mname" value="" placeholder="Enter the middle name">
+            </div>
+            <div class="column">
+                <label>last name:</label>
+                <input type="text"  id="lname" name="lname" placeholder="Enter the last name">
+            </div>
+            <span class="column">
+                <label>University Enrollment number</label>
+                <input type="text" id="enrollment" placeholder="Enrollment number">
+            </span>
+            <span class="column">
+                 <label>Date of birth:</label>
+                <input type="date" id="dob" name="dob">
+            </span>
+            <div class="column">
+                <label>Marital Status: </label>
+                <select id="marital" name="marital">
+                    <option value="select">select</option>
+                    <option value="single">single</option>
+                    <option value="married">married</option>
+                </select>
+            </div>
+            <div class="column">
+                 <label>Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="select">select</option> 
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label>phone number:</label> 
+                <input type="number"  placeholder="Enter the phone number">
+            </div>
+
+            <div class="column">
+                  <label>alternate number</label>
+                  <input type="number"  placeholder="Enter the phone number">
+            </div>
+      
+            <div class="column">
+                 <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter the Email">
+            </div>
+           
+        </div>
+        <h3> Qualification Details </h3>
+        <div class="row">
+            <div class="column">
+                <input type="checkbox">
+                <label>Post Graduation</label>
+            </div>
+            <div class="column">
+                <label>Degree</label>
+                <select id="Degree" name="Degree">
+                    <option>select</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+            <div class="column">
+                <label>Stream</label>
+                <select id="stream" name="stream">
+                    <option>select</option>
+                    <option>computer Application</option>
+                </select>
+            </div>
+            <div class="column">
+                <label>Country</label>
+                <select id="country" name="country">
+                    <option>select</option>
+                    <option>india</option>
+                    <option>bangladesh</option>
+                    <option>south africa</option>
+                </select>
+            </div>
+            <div class="column">
+                <label>passing year</label>
+                <input type="number">
+            </div>
+            <div class="column">
+                <label>Aggregate Percent</label>
+                <input type="number" placeholder="%">
+            </div>
+            <div type="column">
+                <label>University:</label>
+                <input type="text">
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column"></div>
+            <div class="column">
+                <label>college name</label>
+                <input type="text">
+            </div>
+        </div>
+       
+         <div class="row">
+               <div class="column">
+                <input type="checkbox">
+                <label>Engineering Graduation</label>
+               
+                </div>
+                 <div class="column">
+                <lable>Degree</lable>
+                <select id="degree" name="degree">
+                    <option value="select">select</option>
+                    <option value="BE">BE</option>
+                    <option value="B.TECH">B.TECH</option>
+                </select>
+              </div>
+              <div class="column">
+                  <label>stream:</label>
+                  <select id="stream" name="stream" >
+                      <option value="select">select</option>
+                      <option value="communication">Communication</option>
+                      <option value="computer engineer">Computer engineer</option>
+                      <option value="computer science">Computer science</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="electronics & communication">Electronics & communication</option>
+                      <option value="electronics & telecommunication">Electronics & telecommunication</option>
+                      <option value="information technology">Information technology</option>
+                      <option value="telecommunication">Telecommunication</option>
+                  </select>
+              </div>
+              <div class="column">
+                  <label>country:</label>
+                      <select id="country" name="country">
+                          <option>india</option>
+                          <option>afghanistan</option>
+                          <option>austrlia</option>
+                          <option>bangladesh</option>
+                          <option>brazil</option>
+                          <option>Belgium</option>
+                          <option>Bhutan</option>
+                          <option>combodia</option>
+                          <option>cuba</option>
+                          <option>congo</option>
+                          <option>china</option>
+                          <option>democratic republic of the congo</option>
+                          <option>egypt</option>
+                          <option>france</option>
+                          <option>denmark</option>
+                          <option>greenland</option>
+                          <option>greece</option>
+                          <option>hong kong</option>
+                          <option>iceland</option>
+                          <option>jersey</option>
+                          <option>japan</option>
+                          <option>korea</option>
+                          <option>libya</option>
+                          <option>mexico</option>
+                          <option>maldives</option>
+                          <option>new zealand</option>
+                          <option>pakistan</option>
+                          <option>south africa</option>
+                          <option>united kingdom</option>
+                      </select>
+              </div>
+              <div class="column">
+                <label>passing year:</label>
+                   <select id="passedout" name="passedout">
+                       <option value="select">select</option>
+                       <option value="2020">2020</option>
+                       <option value="2021">2021</option>  
+                   </select>
+              </div>
+              <div class="column">
+                  <label>Aggregate Percent:</label>
+                  <input type="number" placeholder="%">
+              </div>
+              <div class="column">
+                  <label>University</label>
+                  <input type="text" >
+              </div>
+              <div class="column">
+                 
+              </div>
+              <div class="column">
+                  <label>College Name :</label>
+                  <input type="text">
+              </div>
+         </div>
+         <div class="row">
+             <div class="column">
+                 <input type="checkbox">
+                 <label>Science Graduation</label>
+             </div>
+             <div class="column">
+                 <label>Degree</label>
+                 <select id="degree" name="degree">
+                     <option>select</option>
+                     <option>BCA</option>
+                     <option>BCS</option>
+                     <option>BSC</option>
+                     <option>others</option>
+                 </select>
+             </div>
+             <div class="column">
+                 <label>stream</label>
+                 <select id="sream" name="stream">
+                     <option>select</option>
+                     <option>chemistry</option>
+                     <option>computer Application</option>
+                     <option>computer science</option>
+                     <option>Electronics</option>
+                     <option>electronics and communication</option>
+                     <option>IT</option>
+                     <option>mathematics</option>
+                     <option>physics</option>
+                 </select>
+             </div>
+             
+            <div class="column">
+                <label>country:</label>
+                    <select id="country" name="country">
+                        <option>india</option>
+                        <option>afghanistan</option>
+                        <option>austrlia</option>
+                        <option>bangladesh</option>
+                        <option>brazil</option>
+                        <option>Belgium</option>
+                        <option>Bhutan</option>
+                        <option>combodia</option>
+                        <option>cuba</option>
+                        <option>congo</option>
+                        <option>china</option>
+                        <option>democratic republic of the congo</option>
+                        <option>egypt</option>
+                        <option>france</option>
+                        <option>denmark</option>
+                        <option>greenland</option>
+                        <option>greece</option>
+                        <option>hong kong</option>
+                        <option>iceland</option>
+                        <option>jersey</option>
+                        <option>japan</option>
+                        <option>korea</option>
+                        <option>libya</option>
+                        <option>mexico</option>
+                        <option>maldives</option>
+                        <option>new zealand</option>
+                        <option>pakistan</option>
+                        <option>south africa</option>
+                        <option>united kingdom</option>
+                    </select>
+             </div>
+             <div class="column">
+                 <label>passing year</label>
+                 <input type="number">
+             </div>
+             <div class="column">
+                 <label>Aggregate Percent</label>
+                 <input type="number">
+             </div>
+             <div class="column">
+                 <label>University</label>
+                 <input type="text">
+             </div>
+             <div class="column">
+                 <!--dont remove div now-->
+             </div>
+             <div class="column">
+                 <label>college</label>
+                 <input type="text">
+             </div>
+         </div>
+         <div class="row">
+            <div class="column">
+            <input type="checkbox">
+            <label>Diploma</label>
+           </div>
+           <div class="column">
+            <label>passing year</label>
+            <input type="number">
+        </div>
+        <div class="column">
+            <label>Aggregate Percent</label>
+            <input type="number" placeholder="%">
+        </div>
+        <div class="column">
+            <label>college name</label>
+            <input type="text">
+         </div>
+         <div class="column"></div>
+         <div class="column">
+            <label>stream</label>
+            <select id="stream" name="stream">
+                <option>select</option>
+                <option>communication</option>
+                <option>computer science Engineering</option>
+                <option>Electronics</option>
+                <option>Electronics & communication</option>
+                <option>Electronics & electrical</option>
+                <option>mechnical Engineering</option>
+                <option>Telecommunication</option>
+                <option>others</option>
+              </select>
+          </div> 
+       </div>
+              <div class="row">
+                  <div class="column">
+                      <input type="checkbox">
+                      <label>class 12</label>
+                  </div>
+                  <div class="column">
+                      <label>passing year</label>
+                      <input type="number">
+                  </div>
+                  <div class="column">
+                      <label>Aggregate Percent</label>
+                      <input type="number" placeholder="%">
+                  </div>
+                  <div class="column">
+                      <label>college name</label>
+                      <input type="text">
+                  </div>
+                 
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <input type="checkbox">
+                      <label>class 10th</label>
+                  </div>
+                  <div class="column">
+                      <label>Passing year</label>
+                      <input type="number">
+                  </div>
+                  <div class="column">
+                      <label>Aggregate Percent</label>
+                      <input type="number">
+                  </div>
+                  <div class="column">
+                      <label>School Name</label>
+                      <input type="text">
+                  </div>
+              </div><br>
+                <input type="button" onclick="alert('success full submit')" value="submit" >
+                <input type="reset">   
+
+
+        
+    </body>
+
+
+</html>

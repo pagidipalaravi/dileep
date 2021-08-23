@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+	.column {
+		border: 1px solid black;
+		text-align:center;
+		background-color:white;
+	}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px)  {
+	.column {
+		width: 100%;
+		border: 2px solid yellow;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.column {
+		float: left;
+		width: 50%;
+		border: 2px solid green;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.column {
+		float: left;
+		width: 33%;
+		border: 2px solid red;
+	}
+}

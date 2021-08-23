@@ -1,0 +1,10 @@
+
+1. MVC Pattern
+
+	View	    Model		Conroller
+	html		Javascript
+	css
+2. MVVM Pattren
+	View	ViewModel 	Model
+	HTML	JS			JS
+	CSS
