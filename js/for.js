@@ -1,4 +1,4 @@
-function forLoops(){
+function onLoad(){
 	simpleFor();
 };
 function simpleFor(){

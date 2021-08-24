@@ -1,3 +1,6 @@
+function onLoad(){
+	switchCase();
+}
 function switchCase(){
 	switch (new Date().getDay()) {
 	  case 0:

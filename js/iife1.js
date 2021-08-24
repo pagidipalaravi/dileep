@@ -1,13 +1,4 @@
-function onLoad(){
-	ifElseLadder();
-	}
-	
-(function (x) {  
-	console.log("This is IIFE");
-})(12)
-
-
-function ifElseLadder(){
+(function () { 
 	let day = 1;
 	if (day == 0) {
 		day = "Sunday";
@@ -34,4 +25,4 @@ function ifElseLadder(){
 			day = "Not a day";
 	}
 	console.log("Today day is " + day);
-}
+})()
