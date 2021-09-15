@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html>
+	<head>	
+		<link rel="stylesheet" href="css_externalfile.css">
+		<style>
+		 h2 {
+			 color:tamato;
+		 }
+		</style>
+	</head>
+	<body>
+	<h1>this is a heading.<h1>
+	<p>this is a paragraph.</p>
+	<p style=color:blue;> lendon   </p>
+	<h2>good morning</h2>
+	</body>
+<html>
