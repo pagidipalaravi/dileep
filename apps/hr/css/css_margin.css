@@ -1,0 +1,40 @@
+	div {
+		  margin: 70px;
+		  border: 1px solid #4CAF50;
+		}
+	div.one{
+		  border: 1px solid black;
+		  margin-top: 100px;
+		  margin-bottom: 100px;
+		  margin-right: 150px;
+		  margin-left: 80px;
+		  background-color: lightblue;
+	}
+	p {
+		border: 1px solid black;
+		margin: 25px 50px;
+		background-color: lightblue;
+	}
+	/*margin auto*/
+	div.two {
+		text-align: center;
+		width:300px;
+		margin: auto;
+		border: 1px solid red;
+	}
+	/* margin inherit*/
+	div.three {
+		margin-left: 100px;
+		border:1px solid black; 
+	}
+	p.four {
+		margin: inherit;
+	}
+	h1 {
+  margin: 0 0 50px 0;
+	}
+	/* margin collapse*/
+
+	h3 {
+		margin: 20px 0 0 0;
+	}
