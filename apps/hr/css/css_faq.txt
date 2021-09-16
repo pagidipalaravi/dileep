@@ -1,0 +1,27 @@
+what is CSS?
+why we use css?
+how to write css?
+how many types of selectors?
+what is diffrence b/w class and id?
+what is group selector in css?
+what is universal selector?
+what is element selector?
+how to add css to html?
+how many ways to add css to html?
+What style will be used when there is more than one style specified for an HTML element?
+what are the use of comments in css?
+how many ways we can color html in css?
+what is most use color values?
+what are properties of background in css?
+what is the use of shorthand?
+what are border-style property?
+which property is used to get curved edgs?
+what is margin?
+what is use of margine in css?
+what inherit value do when it give to margin property?
+what is the use of margine collapes?
+what is padding?
+what is css box modal?
+what is diffrence b/w outline and border?
+what is outline offset?
+

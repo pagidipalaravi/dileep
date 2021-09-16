@@ -1,0 +1,15 @@
+	div {
+	  height: 50px;
+	  width: 100%;
+	  border: 1px solid #4CAF50;
+	}
+	div.one{
+	   height: 200px;
+	  width: 50%;
+	  background-color: powderblue;
+	}
+	div.two{
+	   height: 100px;
+	   max-width: 500px;
+	   background-color: lightblue;
+	}
