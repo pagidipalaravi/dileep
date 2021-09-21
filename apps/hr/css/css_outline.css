@@ -1,0 +1,59 @@
+			p.ten {
+				 border: 2px solid black;
+				 outline: #4CAF50 solid 10px;
+				 margin: auto;  
+				 padding: 20px;
+				 text-align: center;
+			}
+			p.one {
+			  outline-style: dotted;
+			}
+			p.two {
+				outline-style: dashed;
+			}
+			p.three {
+			  outline-style: solid;
+			}
+			p.four {
+				outline-style: double;
+			}
+			p.five {
+			  outline-style: ridge; 
+			}
+			p.six {
+			  outline-style: inset;
+			}
+			p.seven{
+			  outline-style: groove
+			}
+			p.eight {
+				outline-style: outset;
+			}
+			/*outline color and shorthand is used in this css*/
+			p.ex1 {
+			  border: 1px solid black;
+			  outline-style: solid;
+			  outline-color: red;
+			  outline-width: thin;
+			}
+
+			p.ex2 {
+			  border: 1px solid black;
+			  outline-style: solid;
+			  outline-color: red;
+			  outline-width: medium;
+			}
+
+			p.ex3 {
+			  border: 1px solid black;
+			  outline-style: solid;
+			  outline-color: blue;
+			  outline-width: thick;
+			}
+
+			p.ex4 {
+			  border: 1px solid black;
+			  outline-style: solid;
+			  outline-color: red;
+			  outline-width: 4px;
+			}	

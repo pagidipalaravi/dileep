@@ -1,0 +1,10 @@
+what are the diffrent types of input type?
+what is diffrence b/w radio and checkbox?
+what is diffrence b/w submit and button?
+what is form element?
+what is the use of lable in html forms?
+whatare form attributes?
+what is use of action attribute?
+whatis the use of method attribute?
+what is diffrence b/w post,get and put?
+how to implement select one and select many?
