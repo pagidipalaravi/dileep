@@ -10,8 +10,9 @@
 		</div>
 		<hr>
 		<form>
+				<div class="f1">
 			<p>Please note that the TCS NextStep initiative is available in the India geography.<br> Applications from other countries will not be taken into account.</p>
-			<div class="f1">
+			
 					
 				 <label>Prefix:</label>
                 <select id="prefix" name="prefix">
@@ -24,8 +25,8 @@
 				<label for="lname">last name:</label>
                 <input type="text"  id="lname" name="lname" placeholder="Enter the last name">
 			    <p>Please enter your name as appearing on your Passport or SSC Mark sheet. It is extremely important <br> to enter your name correctly. Please recheck the details entered to ensure there are no errors.</p>
-			    <div>
-					
+				<div class="dob">
+				 <label for=""day>Date of Birth*</label><br>
 				  <select id="day" name="day">
                     <option value="day">day</option>
                     <option value="1">1</option>
@@ -75,8 +76,7 @@
 				 <option value="November">November</option>
 				 <option value="December">December</option>
 				 </select>	
-				 <input type="number" list="year" name="year" id="year" >
-				  <datalist id="year" style="display: none ;">
+				  <select id="year">
 					<option value="">year</option>
 					<option value="">2021</option>
 					<option value="">2020</option>
@@ -118,10 +118,35 @@
 					<option value="">1983</option>
 					<option value="">1982</option>
 					<option value="">1981</option> 
-					</datalist>
+					</select>
 				</div>
-					<div></div>
+					<div class="dob">
+						<label for="Gender">Gender*</label><br>
+						<select id="Gender">
+						<option value="">select</option>
+						<option value="male">male</option>
+						<option value="female">female</option>
+						</select>						
+					</div>
+				<div class="dob">
+				 <label for="email">Email id*</label><br>
+				 <input type="email" id="email" placeholder="Email">
+				 <p>It is important to enter your email Id carefully as it will be used for all communications from TCS.<p/>
+				</div>
+					<div class="dob">
+						<label for="mobilenumber">Mobile Number*</label><br>
+						<input type="tel" min-length="10" value="" id="mobilenumber" placeholder="Enter Mobile Number">
+					</div>
+				<div class="dob">
+					 <label for="college">Institute name*</lable>
+					 <input type="text" value="college" id="college" placeholder="Institute name">
+				</div>
+				<div class="dob">
+					<label for="qf">Qualification*</lable>
+					 <input type="text" value="qf" id="qf" placeholder="Branch">
+				</div>
 			</div>
 		</form>
 	</body>
 </html>
+     

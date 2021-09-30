@@ -1,6 +1,6 @@
 Skill : Java Fullstack Developer
 ----
-	Frontend	:	UI Developer
+	Frontend	:	User Interface Developer
 	Middleware	:	Middleware Developer
 	Backend		:	Database Developer
 ========================================
@@ -9,6 +9,12 @@ Languages
 	HTML		Angular	
 	CSS			Bootstrap
 	Javascript	Typescript
+	
+	require
+	Node
+	react
+	knockout
+	
 ========================================
 Middleware : Middleware Developer
 Languages
@@ -28,3 +34,7 @@ Language
 ========================================
 Methodologies : Agile
 ========================================
+
+35,000 Teaching and Project
+35,000	Experienced
+50,000 

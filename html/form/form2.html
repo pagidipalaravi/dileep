@@ -3,10 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="form.css">
+		<script src="regestration.js"></script>
     </head>
     <body>
         <h1>Registration Form</h1>
-        <h3>personal details</h3>
+        <h3>Personal Details</h3>
         <div class="row">
             <div class="column">
                 <label>Prefix:</label>
@@ -17,8 +18,9 @@
                 </select>    
             </div>
             <div class="column">
-                <label for="fname">First Name :</label>
-                <input type="text" id="fname" name="fname" value="" placeholder="Enter the first name">
+                <label for="fname">First Name*:</label>
+                <input type="text" id="fname" name="fname" value="" placeholder="Enter the first name" required 
+				onkeypress="fname()" size="15" maxlength="15">
             </div>
       
             <div class="column">
@@ -27,19 +29,21 @@
             </div>
             <div class="column">
                 <label for="lname">last name:</label>
-                <input type="text"  id="lname" name="lname" placeholder="Enter the last name">
+                <input type="text"  id="lname" name="lname" placeholder="Enter the last name" required onkeypress="lname">
             </div>
+		</div>
+		<div class="row">
             <span class="column">
                 <label>University Enrollment number</label>
                 <input type="text" id="enrollment" placeholder="Enrollment number">
             </span>
             <span class="column">
-                 <label>Date of birth:</label>
-                <input type="date" id="dob" name="dob">
+                 <label>Date of birth:*</label>
+                <input type="date" id="dob" name="dob" required>
             </span>
             <div class="column">
                 <label>Marital Status: </label>
-                <select id="marital" name="marital">
+                <select id="marital" name="marital" required>
                     <option value="select">select</option>
                     <option value="single">single</option>
                     <option value="married">married</option>
@@ -47,7 +51,7 @@
             </div>
             <div class="column">
                  <label>Gender:</label>
-                <select id="gender" name="gender">
+                <select id="gender" name="gender" required>
                     <option value="select">select</option> 
                     <option value="male">male</option>
                     <option value="female">female</option>
@@ -56,20 +60,19 @@
         </div>
         <div class="row">
             <div class="column">
-                <label>phone number:</label> 
-                <input type="number"  placeholder="Enter the phone number">
+                <label>Phone Number:</label> 
+                <input type="number"  placeholder="Enter the phone number" required>
             </div>
 
             <div class="column">
-                  <label>alternate number</label>
-                  <input type="number"  placeholder="Enter the phone number">
+                  <label>Alternate number</label>
+                  <input type="number"  placeholder="Enter the phone number" >
             </div>
       
             <div class="column">
                  <label>Email:</label>
                 <input type="email" id="email" placeholder="Enter the Email">
-            </div>
-           
+            </div>    
         </div>
         <h3> Qualification Details </h3>
         <div class="row">
@@ -78,21 +81,21 @@
                 <label>Post Graduation</label>
             </div>
             <div class="column">
-                <label>Degree</label>
+                <label for="Degree">Degree</label>
                 <select id="Degree" name="Degree">
                     <option>select</option>
                     <option>MCA</option>
                 </select>
             </div>
             <div class="column">
-                <label>Stream</label>
+                <label for="stream">Stream</label>
                 <select id="stream" name="stream">
                     <option>select</option>
                     <option>computer Application</option>
                 </select>
             </div>
             <div class="column">
-                <label>Country</label>
+                <label for="country">Country</label>
                 <select id="country" name="country">
                     <option>select</option>
                     <option>india</option>
@@ -100,25 +103,24 @@
                     <option>south africa</option>
                 </select>
             </div>
-            <div class="column">
-                <label>passing year</label>
-                <input type="number">
+		</div>
+		<div class="row">
+			    <div class="column" id="year">
+                <label for="year">passing year</label>
+                <input type="number" id="year">
             </div>
             <div class="column">
                 <label>Aggregate Percent</label>
                 <input type="number" placeholder="%">
             </div>
             <div type="column">
-                <label>University:</label>
-                <input type="text">
+                <label for="university">University:</label>
+                <input type="text" id="university" size="20" maxlength="20">
             </div>
+			
             <div class="column">
-
-            </div>
-            <div class="column"></div>
-            <div class="column">
-                <label>college name</label>
-                <input type="text">
+                <label for="collegename">college name</label>
+                <input type="text" id="collegename" size="20" >
             </div>
         </div>
        
@@ -132,7 +134,7 @@
                 <lable>Degree</lable>
                 <select id="degree" name="degree">
                     <option value="select">select</option>
-                    <option value="BE">BE</option>
+                    <option value="BE">BE</option 
                     <option value="B.TECH">B.TECH</option>
                 </select>
               </div>
@@ -362,7 +364,7 @@
                       <input type="text">
                   </div>
               </div><br>
-                <input type="button" onclick="alert('success full submit')" value="submit" >
+                <input type="button" onclick="" value="submit" >
                 <input type="reset">   
 
 
