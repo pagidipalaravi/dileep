@@ -8,7 +8,7 @@ function reverse(){
 		num -= num % 10;
 		num /= 10;
 }
- if(reversed_number == reversed_number){
+ if(reversed_number == ){
 	 document.getElementById("output").innerHTML=  "palindromic" ;
  }
   else {
@@ -22,7 +22,7 @@ function polindrom(){
 	var num = document.getElementById("input").value;// 23432
 	var num1 = num;
 	var rev = 0;
-	while (num != 0) {
+	while (num != 0) { 
 		rev = rev * 10;
 		rem = num % 10;
 		num = num - rem;

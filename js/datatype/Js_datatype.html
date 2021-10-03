@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>       
+        <script>
+            let x;         // Now x is undefined
+            x = 5;         // Now x is a Number
+            x = "John";    // Now x is a String
+            document.getElementById("demo").innerHTML = x;
+        </script>
+        <h2>JavaScript Booleans</h2>
+        <p>Booleans can have two values: true or false:</p>        
+        <p id="demo1"></p>       
+        <script>
+            let a = 5;
+            let y = 5;
+            let z = 6;       
+            document.getElementById("demo1").innerHTML = (a == y) + "<br>" + (a == z);
+        </script>             
+        <h2>JavaScript Objects</h2>
+        <p id="demo2"></p>
+        <script>
+            const person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age     : 50,
+            eyeColor  : "blue"
+            };
+            document.getElementById("demo2").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+        </script>
+        <p id="demo3"></p>
+       <script>
+            document.getElementById("demo3").innerHTML = 
+            typeof "" + "<br>" +
+            typeof "John" + "<br>" + 
+            typeof "John Doe";
+        </script>
+        <p id="demo4"></p>
+        <script>
+        document.getElementById("demo4").innerHTML = 
+        typeof 0 + "<br>" + 
+        typeof 314 + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof (3) + "<br>" +
+        typeof (3 + 4);
+        </script>                
+        <p id="demo5"></p>
+        <script>
+        let car;
+        document.getElementById("demo5").innerHTML =
+        car + "<br>" + typeof car;
+        </script>   
+        <p id="demo6"></p>
+        <script>
+            let car = "";
+            document.getElementById("demo6").innerHTML =
+            "The value is: " +
+            car + "<br>" +
+            "The type is: " + typeof car;
+        </script>
+        <p id="demo7"></p>
+        <script>
+            let c = 123e5;
+            let d = 123e5-5;
+            document.getElementById("demo7").innerHTML = 
+            c + "<br>" + d;
+        </script>      
+    </body>
+</html>
