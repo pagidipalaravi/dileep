@@ -1,0 +1,15 @@
+Hello all this is dileep, Good morning all, are you able to here me clearly?
+		Mother Name : Nagamani
+		Father Name : Rambabu
+		DOB: 03 : 08 : 1997
+		My name is dileep mummidi, you can call me dileep.
+		I am from Telangana and native of hyderabad.
+		I completed my graduation from CMR engineering college in 2020.
+		I completed inter sri sai jyothi jr college putturu, chitoor 2016.
+		I completed 10th st marrys convent high school - podur - 2014
+		
+		after complete my graduation i joined as a inten in aktrix technologies.
+		In my intern i worked on project HR  in that projet i work doveleping basic 
+		html pages , css and some basic validation.
+		
+		
