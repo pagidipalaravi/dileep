@@ -1,0 +1,5 @@
+whai is an Object in JavaScript?
+	Anything that is curly braces with property and property name and superated by comma is called object.
+	Object is an realtime entity, car,person and book etc.
+what is the use of this in object?
+	If we want to reffer the current object inside any object then we use this.

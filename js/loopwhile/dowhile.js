@@ -1,7 +1,7 @@
 function dowhileloop(){
 	let text = ""
 	let i = 0;
-	do {
+	do {   
 	text += "<br>The number is " + i;
 		i++;
 	}
