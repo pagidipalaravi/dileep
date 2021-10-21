@@ -4,12 +4,15 @@
 }
 h1{
 	text-align:center;
-	background-color: red;
+	background-color: blue;
 	color: white;
 }
 .employeeForm {
-	margin-top: 100px;
+	
 		text-align: center;
+}
+p{
+	color: red;
 }
 
 .column {
