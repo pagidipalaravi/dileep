@@ -56,3 +56,27 @@ p{
 		border-colopse: colopse;	
 	}
 }
+
+form {
+	margin: 0 auto;
+	text-align::center; 
+	border:0px solid white;
+	
+}
+.log-div{
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  background-color: #F1F0EB;
+  align:center;
+}
+.hide-msg{
+	visibility:hidden;
+}
+.error-msg{
+	visibility:visible;
+	color : red;
+}
+.success-msg{
+	visibility:visible;
+}

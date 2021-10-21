@@ -13,27 +13,31 @@
 			<div class = "row">
 			 <div class = "column">
 			<label for= "employeeId" >Employee Id*</label><br>
-			<input type = "tel" id = "employeeId" value="" minlength = "3" maxlength = "6"  required placeholder = "Enter your Employee Id" >
+			<input type = "text" id = "employeeId" value="" minlength = "3" maxlength = "6"  required placeholder = "Enter your Employee Id" onkeypress="return emailIdKeyPress()">
+			<div id = "error1"></div>
 			</div>
 			<div class = "column">
-			<label for = "employeeFirstName">First Name*</label><br>
-			<input type ="text" id ="employeeFirstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required>
+			<label for = "firstName">First Name*</label><br>
+			<input type ="text" id ="firstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required>
 			</div>
-			<div class = "column">
-			<label for="employeeLastName">Last Name*</label><br>
-			<input type="text" id= "employeeLastName" value = "" placeholder = "Enter your Last Name" required>
+			<!--<div class = "column">
+			<label for="lastName">Last Name*</label><br>
+			<input type="text" id= "lastName" value = "" placeholder = "Enter your Last Name" required>
 			</div>
 			<div class = "column">
 			<label for="email">Email*</label><br>
 			<input type = "email"  id = "email" value = "" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder = "Enter your Email" required >
+			<div id = "error4"></div>
 			</div>
 			<div class = "column">
 			<label for = "phoneNumber">Phone Number*</label><br>
 			<input type = "tel" id= "phoneNumber" value = "" maxlength = "10" pattern="[1-9]{1}[0-9]{9}" placeholder = "Enter Phone Number" required>
+			<div id = "error5"></div>
 			</div>
 			<div class = "column">
 			<label for = "hireDate">Hire Date*</label><br>
-			<input type = "date"   id = "hireDate" value = "" name = "hireDate" required >
+			<input type = "date"   id = "hireDate" value = ""  name = "hireDate" required >
+			
 			</div>
 			<div class = "column">
 			<label for = "salary" >Salary*</label><br>
@@ -54,7 +58,7 @@
 			<div class = "column">
 			<label for = "department">Department*</label><br>
 			<input type = "number" id = "department" required>
-			</div>	
+			</div-->	
 		  </div>
 		  <button type = "submit" onclick = "employeeForm()" >submit</button>	
 		</div>
