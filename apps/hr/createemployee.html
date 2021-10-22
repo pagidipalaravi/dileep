@@ -18,13 +18,13 @@
 			</div>
 			<div class = "column">
 			<label for = "firstName">First Name*</label><br>
-			<input type ="text" id ="firstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required>
-			</div>
-			<!--<div class = "column">
-			<label for="lastName">Last Name*</label><br>
-			<input type="text" id= "lastName" value = "" placeholder = "Enter your Last Name" required>
+			<input type ="text" id ="firstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required onkeypress="return firstNameKeyPress()">
 			</div>
 			<div class = "column">
+			<label for="lastName">Last Name*</label><br>
+			<input type="text" id= "lastName" value = "" placeholder = "Enter your Last Name" required onkeypress = "return lastNameKeyPress()">
+			</div>
+			<!--<div class = "column">
 			<label for="email">Email*</label><br>
 			<input type = "email"  id = "email" value = "" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder = "Enter your Email" required >
 			<div id = "error4"></div>

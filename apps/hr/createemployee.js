@@ -41,6 +41,42 @@ function isAlphabet(key){
 	}
 	return isAlphabet;
 }
+function firstNameKeyPress(){
+	document.getElementById("message").innerHTML="";
+	if(isSpace(event.keyCode)) {
+		return false;
+	}else if(isSpecialCharacter(event.key)){
+		return false;
+	}else if (isNumber(event.key)){
+		return false;
+	}else {
+		return true;
+	}
+}
+ 
+ function isNumber(key){
+	 let isNumber = false;
+	 let regexp = new RegExp("0123456789");
+	 let patt = new RegExp(key);
+	 if(patt.test(regexp)){
+		  errorMessage("number not allowed here");
+		  isNumber = true;
+	  }
+	return isNumber;	
+ }
+
+function lastNameKeyPress(){
+	document.getElementById("message").innerHTML="";
+	if(isSpace(event.keyCode)) {
+		return false;
+	}else if(isSpecialCharacter(event.key)){
+		return false;
+	}else if (isNumber(event.key)){
+		return false;
+	}else {
+		return true;
+	}
+}
 
 function employeeForm(){
 	let employeeId = document.getElementById("employeeId").value;
