@@ -1,3 +1,47 @@
+function employeeIdKeyPress(){
+	document.getElementById("message").innerHTML="";
+	if(isSpace(event.keyCode)) {
+		return false;
+	}else if(isSpecialCharacter(event.key)){
+		return false;
+	}else if(isAlphabet(event.key)){
+		return false;
+	}else{
+		return true;
+	}
+}
+
+function isSpace(keyCode){
+	let isSpace = false;
+	if (keyCode == 32) {
+		errorMessage("Space not allowed here");
+		isSpace = true;
+	}
+	return isSpace;
+}
+
+function isSpecialCharacter(key){
+	let isSpecialCharacter = false;
+	let regexp = new RegExp(".!@#$%^&*()_+-=<>~`");
+	let patt = new RegExp(key);
+	if (patt.test(regexp)) {
+		errorMessage(key + " Special character not allowed here");
+		isSpecialCharacter = true;
+	}
+	return isSpecialCharacter;
+}
+
+function isAlphabet(key){
+	let isAlphabet = false;
+	let regexp = new RegExp("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
+	let patt = new RegExp(key);
+	 if (patt.test(regexp)) {
+		errorMessage(key +" character not allowed here");
+		isAlphabet= true;
+	}
+	return isAlphabet;
+}
+
 function employeeForm(){
 	let employeeId = document.getElementById("employeeId").value;
 	validateEmployeeId(employeeId);
@@ -85,36 +129,7 @@ function validateDepartment(department){
 		document.getElementById("department").style.backgroundColor = "yellow";
 	}
 }
-function emailIdKeyPress(){
-	isSpace(event.keyCode);
-	isSpecialCharacter(event.key);
-	isAlphabet(event.key);
-}
 
-function isSpace(keyCode){
-		if (keyCode == 32) {
-		errorMessage("Space is not allowed here")
-		return false;
-	}
-}
-function isSpecialCharacter(key){
-	var scregexp = new RegExp(".!@#$%^&*()_+-=");
-	var patt = new RegExp(key);
-	 if (patt.test(scregexp)) {
-		let em = "special character not Required";
-		errorMessage(em);
-}
-}
-function isAlphabet(key){
-	
-	var cregexp = new RegExp("^[a-zA-Z]+$");
-	var patt = new RegExp(key);
-	 if (patt.test(cregexp)) {
-		let em = "character not allowed here";
-		errorMessage(em);
-}
-	
-}
 
 function successMessage(successMsg) {
 	document.getElementById("message").setAttribute("class","success-msg");
@@ -125,3 +140,4 @@ function errorMessage(errorMessage) {
 	document.getElementById("message").setAttribute("class", "error-msg");
 	document.getElementById("message").innerHTML = errorMessage;
 }
+// What is the difference between white box testing and black box testing?
