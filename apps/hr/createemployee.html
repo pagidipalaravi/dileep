@@ -35,7 +35,7 @@
 			</div>
 			<div class = "column">
 			<label for = "hireDate">Hire Date*</label><br>
-			<input type = "tel" maxlength="10"  id = "hireDate" value = ""  name = "hireDate" placeholder="Enter hire date" required onkeypress="return hireDateKeyPress()">
+			<input type = "date"   id = "hireDate" value = ""   min ="2021-10-24" max="2030-12-10" required >
 			</div>
 			<div class = "column">
 			<label for = "salary" >Salary*</label><br>
@@ -52,23 +52,13 @@
 			<div class = "column">
 			<label for = "manager">Manager Name*</label><br>
 			<select  id = "manager" required >
-				<!--<option >select</option>
-				<option value="101">Raghu</option>
-				<option value="102">Swathi</option>
-				<option value="103">Ravi</option>
-				<option value="104">Uday</option>
-				<option value="105">Ganesh</option-->
+				
 			</select>
 			</div>
 			<div class = "column">
 			<label for = "department">Department Name*</label><br>  
 			<select id = "department" required >
-				<option >select</option>
-				<option value="HR">HR</option>
-				<option value="jounier_doveloper">jounier doveloper</option>
-				<option value="manager">Manager</option>
-				<option value="senior_developer">senior Developer</option>
-				<option value="general_manager">General manager</option>
+				
 			</select>
 			</div>			
 		  </div>

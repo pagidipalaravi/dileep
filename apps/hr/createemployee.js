@@ -119,17 +119,7 @@ function phoneNumberKeyPress(){
 	}
 }
 
-function hireDateKeyPress(){
-		var date_regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[1-9]|2[1-9])$/;
-        var testDate =document.getElementById("hireDate").value;
-        if (date_regex.test(testDate)) {
-            document.getElementById("message").innerHTML = "Date follows dd/mm/yy format";
-        }
-        else{
-          document.getElementById("message").innerHTML = "Invalid date format";
-        }
 
-}
 function salarykeypress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -302,7 +292,7 @@ function validateSalary(salary){
 	}
 }
 function validateJob(job){
-	if (job == "" || job == null){
+	if (job == "Please Select"){
 		document.getElementById("job").style.borderColor  = "red";
 	}
 }
@@ -312,12 +302,12 @@ function validateCommisionPct(commisionPct){
 	}
 }
 function validateManager(manager){
-	if(manager == "" || manager == null){
+	if(manager == "Please Select"){
 		document.getElementById("manager").style.borderColor  = "red";
 	}
 }
 function validateDepartment(department){
-	if(department == "" || department == null){
+	if(department == "Please Select" ){
 		document.getElementById("department").style.borderColor  = "red";
 	}
 }
