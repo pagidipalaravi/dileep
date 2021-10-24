@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		 <meta charset="UTF-8">
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="createemployee.css"></link>
 		<script src = "createemployee.js"></script>
 	</head>
-	<body>		
+	<body onload = "onloadCreateEmployee()">		
 		<div class = "employeeForm">
 		 <hr>
 		 <h1>Employee Form</h1>
@@ -22,43 +23,54 @@
 			</div>
 			<div class = "column">
 			<label for="lastName">Last Name*</label><br>
-			<input type="text" id= "lastName" value = "" placeholder = "Enter your Last Name" required onkeypress = "return lastNameKeyPress()">
+			<input type="text" id= "lastName" value = "" maxlength ="10" placeholder = "Enter your Last Name" required onkeypress = "return lastNameKeyPress()">
 			</div>
-			<!--<div class = "column">
+			<div class = "column">
 			<label for="email">Email*</label><br>
-			<input type = "email"  id = "email" value = "" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder = "Enter your Email" required >
-			<div id = "error4"></div>
+			<input type = "email"  id = "email" value = "" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder = "Enter your Email" required onkeypress="return emailKeyPress()">
 			</div>
 			<div class = "column">
 			<label for = "phoneNumber">Phone Number*</label><br>
-			<input type = "tel" id= "phoneNumber" value = "" maxlength = "10" pattern="[1-9]{1}[0-9]{9}" placeholder = "Enter Phone Number" required>
-			<div id = "error5"></div>
+			<input type = "tel" id= "phoneNumber" value = "" maxlength = "10" pattern="[1-9]{1}[0-9]{9}" placeholder = "Enter Phone Number" required onkeypress="return phoneNumberKeyPress()" >
 			</div>
 			<div class = "column">
 			<label for = "hireDate">Hire Date*</label><br>
-			<input type = "date"   id = "hireDate" value = ""  name = "hireDate" required >
-			
+			<input type = "tel" maxlength="10"  id = "hireDate" value = ""  name = "hireDate" placeholder="Enter hire date" required onkeypress="return hireDateKeyPress()">
 			</div>
 			<div class = "column">
 			<label for = "salary" >Salary*</label><br>
-			<input type = "number" id = "salary" value = ""   maxlength = "6" pattern = "[0-9]{6}" required >
+			<input type = "text" id = "salary" value = ""   maxlength = "6" placeholder="Enter salary" required onkeypress="return salarykeypress()">
 			</div>
 			<div class = "column">
 			<label for = "job">Job*</label><br>
-			<input type = "text" id = "job" >
+			<select type = "text" id = "job"></select>
 			</div>
 			<div class = "column">
 			<label for = "commisionPct">Commision Pct*</label><br>
-			<input type = "text" id = "commisionPct" required>
+			<input type = "text" id = "commisionPct" required  placeholder="Enter in decimal number" onkeypress="return commisionPctKeyPress()">
 			</div>
 			<div class = "column">
 			<label for = "manager">Manager Name*</label><br>
-			<input type = "number" id = "manager" required>
+			<select  id = "manager" required >
+				<!--<option >select</option>
+				<option value="101">Raghu</option>
+				<option value="102">Swathi</option>
+				<option value="103">Ravi</option>
+				<option value="104">Uday</option>
+				<option value="105">Ganesh</option-->
+			</select>
 			</div>
 			<div class = "column">
-			<label for = "department">Department*</label><br>
-			<input type = "number" id = "department" required>
-			</div-->	
+			<label for = "department">Department Name*</label><br>  
+			<select id = "department" required >
+				<option >select</option>
+				<option value="HR">HR</option>
+				<option value="jounier_doveloper">jounier doveloper</option>
+				<option value="manager">Manager</option>
+				<option value="senior_developer">senior Developer</option>
+				<option value="general_manager">General manager</option>
+			</select>
+			</div>			
 		  </div>
 		  <button type = "submit" onclick = "employeeForm()" >submit</button>	
 		</div>

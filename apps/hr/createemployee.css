@@ -53,7 +53,8 @@ p{
 		float: left;
 		width: 33%;
         text-align: center;
-		border-colopse: colopse;	
+		border-colopse: colopse;
+        border: hidden;		
 	}
 }
 
