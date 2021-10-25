@@ -1,22 +1,4 @@
-function onloadCreateEmployee(){
-	getJobs();
-	getManagers();
-	getDepartments();
-}
-//This is onkeypress function for every input.
-function employeeIdKeyPress(){
-	document.getElementById("message").innerHTML="";
-	if(isSpace(event.keyCode)) {
-		return false;
-	}else if(isSpecialCharacter(event.key)){
-		return false;
-	}else if(isAlphabet(event.key)){
-		return false;
-	}else{
-		return true;
-	}
-}
-// this function is to show error when we press space in input.
+// This function is to show error when we press space in input.
 function isSpace(keyCode){
 	let isSpace = false;
 	if (keyCode == 32) {
@@ -25,7 +7,7 @@ function isSpace(keyCode){
 	}
 	return isSpace;
 }
-// this function is writen to show error when we press special character in input.
+// This function is writen to show error when we press special character in input.
 function isSpecialCharacter(key){
 	let isSpecialCharacter = false;
 	let regexp = new RegExp(".!@#$%^&*()_+-=<>~`");
@@ -36,7 +18,7 @@ function isSpecialCharacter(key){
 	}
 	return isSpecialCharacter;
 }
-// this function is writen to show error when we press Alphabet in input.
+// This function is writen to show error when we press Alphabet in input.
 function isAlphabet(key){
 	let isAlphabet = false;
 	let regexp = new RegExp("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\d");
@@ -46,18 +28,6 @@ function isAlphabet(key){
 		isAlphabet= true;
 	}
 	return isAlphabet;
-}
-function firstNameKeyPress(){
-	document.getElementById("message").innerHTML="";
-	if(isSpace(event.keyCode)) {
-		return false;
-	}else if(isSpecialCharacter(event.key)){
-		return false;
-	}else if (isNumber(event.key)){
-		return false;
-	}else {
-		return true;
-	}
 }
  // this function is writen to show error when we press number in input.
  function isNumber(key){
@@ -71,6 +41,69 @@ function firstNameKeyPress(){
 	return isNumber;	
  }
 
+function checkDecimal(){
+	let checkDecimal = false;
+	let input = document.getElementById("commisionPct").value;
+	var RE = /^[0-9]\d*\.[0-9]\d+$/;
+    if(RE.test(input)){
+		checkDecimal = true;	
+	}
+	return checkDecimal;
+}
+// this function for validate email when input is given.
+function checkEmail() {
+        var email = document.getElementById('email');
+        var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!filter.test(email.value)) {
+            errorMessage('Please provide a valid email address');
+            email.focus;
+            return false;
+        }
+    }
+	
+//
+function successMessage(successMsg) {
+	document.getElementById("message").setAttribute("class","success-msg");
+	document.getElementById("message").innerHTML= successMsg;
+	//window.open("E:/App/html/home.html");
+}
+//
+function errorMessage(errorMessage) {
+	document.getElementById("message").setAttribute("class", "error-msg");
+	document.getElementById("message").innerHTML = errorMessage;
+}
+function onloadCreateEmployee(){
+	getJobs();
+	getManagers();
+	getDepartments();
+}
+//Employee Id Validation goes here
+function employeeIdKeyPress(){
+	document.getElementById("message").innerHTML="";
+	if(isSpace(event.keyCode)) {
+		return false;
+	}else if(isSpecialCharacter(event.key)){
+		return false;
+	}else if(isAlphabet(event.key)){
+		return false;
+	}else{
+		return true;
+	}
+}
+/***first Name validation goes here***/
+function firstNameKeyPress(){
+	document.getElementById("message").innerHTML="";
+	if(isSpace(event.keyCode)) {
+		return false;
+	}else if(isSpecialCharacter(event.key)){
+		return false;
+	}else if (isNumber(event.key)){
+		return false;
+	}else {
+		return true;
+	}
+}
+/***last Name validation goes here***/
 function lastNameKeyPress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -83,7 +116,7 @@ function lastNameKeyPress(){
 		return true;
 	}
 }
-
+/***Email validation goes here***/
 function emailKeyPress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -92,20 +125,10 @@ function emailKeyPress(){
 		return false;
 	} else{
 		return true;
-	}
-	
+	}	
 }
-// this function for validate email when input is given.
-function checkEmail() {
-        var email = document.getElementById('email');
-        var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (!filter.test(email.value)) {
-            errorMessage('Please provide a valid email address');
-            email.focus;
-            return false;
-        }
-    }
-//This function for validation of phone number.
+
+/****/
 function phoneNumberKeyPress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -118,8 +141,8 @@ function phoneNumberKeyPress(){
 		return true;
 	}
 }
-
-
+/**Hire date**/
+/**Sal**/
 function salarykeypress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -132,18 +155,29 @@ function salarykeypress(){
 		return true;
 	}
 }
-function jobkeypress(){
-	document.getElementById("message").innerHTML="";
-	if(isSpace(event.keyCode)) {
-		return false;
-	}else if(isSpecialCharacter(event.key)){
-		return false;
-	}else if (isNumber(event.key)){
-		return false;
-	}else {
-		return true;
+/**job**/
+function getJobs(){
+	let jobOptions = "<option>Please Select</option>";
+	/** TODO 
+		Get the arrayOfJobs by calling java rest service
+		The REST service will gets the arrayOfJobs from database
+	**/
+	let arrayOfJobs = [
+		{"jobId":0012,"jobName":"IT_PROG"},
+		{"jobId":0024,"jobName":"IT_PROG"},
+		{"jobId":0008,"jobName":"AD_VP"},
+		{"jobId":0032,"jobName":"FI_MGR"},
+		{"jobId":0055,"jobName":"FI_ACCOUNT"}
+	];
+	for(let i = 0; i < arrayOfJobs.length; i++){
+		let jobId = arrayOfJobs[i].jobId;	
+		let jobName = arrayOfJobs[i].jobName;
+		jobOptions = jobOptions + "<option value=" + jobId + ">" + jobName + "</option>";	  
 	}
+	console.log(jobOptions);
+	document.getElementById("job").innerHTML = jobOptions;
 }
+/**commision Pct**/
 function commisionPctKeyPress(){
 	document.getElementById("message").innerHTML="";
 	if(isSpace(event.keyCode)) {
@@ -153,33 +187,6 @@ function commisionPctKeyPress(){
 	}else {
 		return true;
 	}
-}
-
-function checkDecimal(){
-	let checkDecimal = false;
-	let input = document.getElementById("commisionPct").value;
-	var RE = /^[0-9]\d*\.[0-9]\d+$/;
-    if(RE.test(input)){
-		checkDecimal = true;	
-	}
-	return checkDecimal;
-}
-function getJobs(){
-	let jobOptions = "<option>Please Select</option>";
-	let arrayOfJobs = [
-	{"jobId":0012,"jobName":"IT_PROG"},
-	{"jobId":0024,"jobName":"IT_PROG"},
-	{"jobId":0008,"jobName":"AD_VP"},
-	{"jobId":0032,"jobName":"FI_MGR"},
-	{"jobId":0055,"jobName":"FI_ACCOUNT"}
-	];
-	for(let i = 0; i < arrayOfJobs.length; i++){
-		let jobId = arrayOfJobs[i].jobId;	
-		let jobName = arrayOfJobs[i].jobName;
-		jobOptions = jobOptions+ "<option value=" + jobId + ">" + jobName + "</option>";	  
-	}
-	console.log(jobOptions);
-	document.getElementById("job").innerHTML = jobOptions;
 }
 function getManagers(){
 	let managerOptions = "<option>Please Select</option>";
@@ -223,6 +230,10 @@ function getDepartments(){
 		console.log(departmentOptions);
 		document.getElementById("department").innerHTML = departmentOptions;
 }
+
+
+
+
 // This is Submit function 
 function employeeForm(){
 	let employeeId = document.getElementById("employeeId").value;
@@ -313,13 +324,5 @@ function validateDepartment(department){
 }
 
 
-function successMessage(successMsg) {
-	document.getElementById("message").setAttribute("class","success-msg");
-	document.getElementById("message").innerHTML= successMsg;
-	//window.open("E:/App/html/home.html");
-}
-function errorMessage(errorMessage) {
-	document.getElementById("message").setAttribute("class", "error-msg");
-	document.getElementById("message").innerHTML = errorMessage;
-}
+
 // What is the difference between white box testing and black box testing?
