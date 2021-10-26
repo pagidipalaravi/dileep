@@ -1,4 +1,4 @@
-// This function is to show error when we press space in input.
+//Return true when we press space. 
 function isSpace(keyCode){
 	let isSpace = false;
 	if (keyCode == 32) {
@@ -7,7 +7,7 @@ function isSpace(keyCode){
 	}
 	return isSpace;
 }
-// This function is writen to show error when we press special character in input.
+// Return true when we press special character in input.
 function isSpecialCharacter(key){
 	let isSpecialCharacter = false;
 	let regexp = new RegExp(".!@#$%^&*()_+-=<>~`");
@@ -18,7 +18,7 @@ function isSpecialCharacter(key){
 	}
 	return isSpecialCharacter;
 }
-// This function is writen to show error when we press Alphabet in input.
+//Return true when we press Alphabet in input.
 function isAlphabet(key){
 	let isAlphabet = false;
 	let regexp = new RegExp("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\d");
@@ -29,7 +29,7 @@ function isAlphabet(key){
 	}
 	return isAlphabet;
 }
- // this function is writen to show error when we press number in input.
+ // Return true when we press number in input.
  function isNumber(key){
 	 let isNumber = false;
 	 let regexp = new RegExp("0123456789");
@@ -41,6 +41,7 @@ function isAlphabet(key){
 	return isNumber;	
  }
 
+// Return true when we press decimal in input.
 function checkDecimal(){
 	let checkDecimal = false;
 	let input = document.getElementById("commisionPct").value;
@@ -50,7 +51,7 @@ function checkDecimal(){
 	}
 	return checkDecimal;
 }
-// this function for validate email when input is given.
+//Return true when we enter input is given.
 function checkEmail() {
         var email = document.getElementById('email');
         var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -59,23 +60,25 @@ function checkEmail() {
             email.focus;
             return false;
         }
-    }
+}
 	
-//
+// Write the success message into HTML.
 function successMessage(successMsg) {
 	document.getElementById("message").setAttribute("class","success-msg");
 	document.getElementById("message").innerHTML= successMsg;
-	//window.open("E:/App/html/home.html");
+	
 }
-//
+// Write the error message into HTML.
 function errorMessage(errorMessage) {
 	document.getElementById("message").setAttribute("class", "error-msg");
 	document.getElementById("message").innerHTML = errorMessage;
 }
+// onload calling
 function onloadCreateEmployee(){
 	getJobs();
 	getManagers();
 	getDepartments();
+	getCurrntDate();
 }
 //Employee Id Validation goes here
 function employeeIdKeyPress(){
@@ -123,7 +126,7 @@ function emailKeyPress(){
 		return false;
 	}else if (checkEmail(event.key)){
 		return false;
-	} else{
+	}else{
 		return true;
 	}	
 }
@@ -142,6 +145,22 @@ function phoneNumberKeyPress(){
 	}
 }
 /**Hire date**/
+function getCurrntDate(){
+	let date = new Date();
+	let dd = date.getDate();
+	let mm = date.getMonth() + 1;
+	let yyyy = date.getFullYear();
+	if(dd < 10){
+		dd = "0" + dd; 
+	}
+	if(mm < 10){
+		mm = "0" + mm;
+	}
+	let yyyy_mm_dd = ((yyyy) +"-" + (mm) + "-" + (dd));
+	console.log("date=" + yyyy_mm_dd);
+	document.getElementById("hireDate").min = yyyy_mm_dd ;
+	document.getElementById("hireDate").value = yyyy_mm_dd;
+}
 /**Sal**/
 function salarykeypress(){
 	document.getElementById("message").innerHTML="";

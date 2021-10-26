@@ -7,9 +7,8 @@
 		<script src = "createemployee.js"></script>
 	</head>
 	<body onload = "onloadCreateEmployee()">		
-		<div class = "employeeForm">
-		 <hr>
 		 <h1>Employee Form</h1>
+		<div class = "employeeForm">
 		 <p id="message"></p>
 		<div class = "row">
 				<div class = "column">
@@ -35,7 +34,7 @@
 			</div>
 			<div class = "column">
 				<label for = "hireDate">Hire Date*</label><br>
-				<input type = "date"   id = "hireDate" value = ""   min ="2021-10-24" max="2030-12-10" required >
+				<input type = "date"   id = "hireDate" value = ""   min ="" max="2030-12-10" required >
 			</div>
 			<div class = "column">
 			<label for = "salary" >Salary*</label><br>
@@ -48,7 +47,7 @@
 			</div>
 			<div class = "column">
 			<label for = "commisionPct">Commision Pct*</label><br>
-			<input type = "text" id = "commisionPct" required  placeholder="Enter in decimal number" onkeypress="return commisionPctKeyPress()">
+			<input type = "text" id = "commisionPct" required  step="0.01" placeholder="0.00" onkeypress="return commisionPctKeyPress()">
 			</div>
 			<div class = "column">
 			<label for = "manager">Manager Name*</label><br>
@@ -60,8 +59,10 @@
 			<select id = "department" required >
 			</select>
 			</div>			
-		  </div>
-		  <button type = "submit" onclick = "employeeForm()" >submit</button>	
-		</div>		 
+		  </div>		  	
+		</div>
+		<div class ="center">
+			<button type = "submit" onclick = "employeeForm()" >submit</button>
+		</div>
 	</body>   
 </html>

@@ -9,7 +9,7 @@ h1{
 }
 .employeeForm {
 	
-		text-align: center;
+		margin-left:200px;
 }
 p{
 	color: red;
@@ -52,7 +52,7 @@ p{
 	.column {
 		float: left;
 		width: 33%;
-        text-align: center;
+        text-align: left;
 		border-colopse: colopse;
         border: hidden;		
 	}
@@ -68,4 +68,8 @@ p{
 }
 .success-msg{
 	visibility:visible;
+}
+
+.center{
+	text-align: center;
 }
