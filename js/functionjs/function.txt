@@ -1,0 +1,56 @@
+what is function?
+	JavaScript functions are defined with the function keyword.
+	You can use a function declaration or a function expression
+what is function declaration?
+	Declared functions are not executed immediately. They are "saved for later use",
+	and will be executed later, when they are invoked (called upon).
+what is function  expression?
+	A JavaScript function can also be defined using an expression.
+	A function expression can be stored in a variable.
+	The function above is actually an anonymous function (a function without a name).
+	Functions stored in variables do not need function names. They are always invoked (called) using the variable.
+what is function Constructor?
+	As you have seen in the previous examples, JavaScript functions are defined with the function keyword.
+	Functions can also be defined with a built-in JavaScript function constructor called Function().
+	You actually don't have to use the function constructor. The example above is the same as writing
+what is function hosting?
+	Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
+	Hoisting applies to variable declarations and to function declarations.
+	Because of this, JavaScript functions can be called before they are declared
+what is self-invoking functions?
+	Function expressions can be made "self-invoking".
+	A self-invoking expression is invoked (started) automatically, without being called.
+	Function expressions will execute automatically if the expression is followed by ().
+	You cannot self-invoke a function declaration.
+	You have to add parentheses around the function to indicate that it is a function expression
+what is  the typeof for function?
+	he typeof operator in JavaScript returns "function" for functions.
+	But, JavaScript functions can best be described as objects.
+	JavaScript functions have both properties and methods.
+	The arguments.length property returns the number of arguments received when the function was invoked
+What is arrow function?
+	Arrow function allows a short syntax for writing function expressions.
+	You don't need the function keyword, the return keyword, and the curly brackets.
+	Arrow functions do not have their own this. They are not well suited for defining object methods.
+	Arrow functions are not hoisted. They must be defined before they are used.
+	Using const is safer than using var, because a function expression is always constant value.
+	You can only omit the return keyword and the curly brackets if the function is a single statement. 
+	Because of this, it might be a good habit to always keep them.
+What is function parameters?
+	A JavaScript function does not perform any checking on parameter values (arguments).
+	Function parameters are the names listed in the function definition.
+	Function arguments are the real values passed to (and received by) the function
+	JavaScript function definitions do not specify data types for parameters.
+	JavaScript functions do not perform type checking on the passed arguments.
+	JavaScript functions do not check the number of arguments received.
+What is Default Parameters?
+	If a function is called with missing arguments (less than declared), the missing values are set to undefined.
+	Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter
+What is the function invocation?
+	The code inside a JavaScript function will execute when "something" invokes it.
+What is the Invoking a JavaScript Function?
+	The code inside a function is not executed when the function is defined.
+	The code inside a function is executed when the function is invoked.
+	It is common to use the term "call a function" instead of "invoke a function".
+	It is also common to say "call upon a function", "start a function", or "execute a function".
+	In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.

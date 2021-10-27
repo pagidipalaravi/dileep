@@ -26,6 +26,12 @@ function vowelCount(){
 function matchWord(){
 	var m = document.getElementById("input2").value;
 	  t=m.toLowerCase();
-		document.getElementById("output2").innerHTML = t.match(/are/g);
+		document.getElementById("output2").innerHTML = t.match(/how/g);
 	
+}
+
+function AlphabetSoup() { 
+ 
+  let sortedStr = str.toLowerCase().split("").sort().join("");
+  return sortedStr; 
 }
