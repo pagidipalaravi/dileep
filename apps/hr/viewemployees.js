@@ -1,4 +1,5 @@
 function viewEmployees(){
+	//
 	var arrayOfEmployeesObject = [
 	{"employeeId":217,"firstName":"surya","lastName":"pagidipala","email":"surya123@gmail.com","phoneNumber":"9182550827","hireDate":"2021-01-15","salary":10000.0,"jobId":"IT_PROG","commisionPct":null,"managerId":103,"departmentId":60},
 	{"employeeId":100,"firstName":"Steven","lastName":"King","email":"SKING","phoneNumber":"515.123.4567","hireDate":"2003-06-17","salary":24000.0,"jobId":"AD_PRES","commisionPct":null,"managerId":null,"departmentId":90},
@@ -18,7 +19,7 @@ function viewEmployees(){
 	var header = "";
 	var rows = ""; 
 	// create header and insert heading into it.
-	var header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th></tr>";
+	var header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
 	// created loop to retrive the data from the arrayOfEmployeesObject.It also create the row 
 	for(var i = 0; i < arrayOfEmployeesObject.length; i++){
 		var employeeId = arrayOfEmployeesObject[i].employeeId;
@@ -32,7 +33,7 @@ function viewEmployees(){
 		var commisionPct = arrayOfEmployeesObject[i].commisionPct;
 		var managerId = arrayOfEmployeesObject[i].managerId;
 		var departmentId = arrayOfEmployeesObject[i].departmentId;
-		var row = "<tr><td> "+ employeeId + "</td> <td>"+ firstName +"</td> <td>"+ lastName +"</td> <td>"+ email +"</td> <td>"+ phoneNumber +"</td> <td>"+hireDate+"</td><td>"+salary+"</td><td>"+jobId+"</td><td>"+commisionPct+"</td><td>"+managerId+"</td><td>"+departmentId+"</td></tr>";
+		var row = "<tr><td> "+ employeeId + "</td> <td>"+ firstName +"</td> <td>"+ lastName +"</td> <td>"+ email +"</td> <td>"+ phoneNumber +"</td> <td>"+hireDate+"</td><td>"+salary+"</td><td>"+jobId+"</td><td>"+commisionPct+"</td><td>"+managerId+"</td><td>"+departmentId+"</td><td><input id ="+ employeeId + " type='button' onclick='editEmployee()' value='Edit'><input type='button' value='Delete'></td></tr>";
 		rows = rows + row;	
 	}
 		// join the header and rows insert into table
