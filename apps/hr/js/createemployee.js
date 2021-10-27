@@ -182,11 +182,11 @@ function getJobs(){
 		The REST service will gets the arrayOfJobs from database
 	**/
 	let arrayOfJobs = [
-		{"jobId":0012,"jobName":"IT_PROG"},
-		{"jobId":0024,"jobName":"IT_PROG"},
-		{"jobId":0008,"jobName":"AD_VP"},
-		{"jobId":0032,"jobName":"FI_MGR"},
-		{"jobId":0055,"jobName":"FI_ACCOUNT"}
+		{"jobId":12,"jobName":"IT_PROG"},
+		{"jobId":24,"jobName":"IT_PROG"},
+		{"jobId":8,"jobName":"AD_VP"},
+		{"jobId":32,"jobName":"FI_MGR"},
+		{"jobId":55,"jobName":"FI_ACCOUNT"}
 	];
 	for(let i = 0; i < arrayOfJobs.length; i++){
 		let jobId = arrayOfJobs[i].jobId;	

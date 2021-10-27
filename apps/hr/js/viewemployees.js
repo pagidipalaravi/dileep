@@ -33,10 +33,18 @@ function viewEmployees(){
 		var commisionPct = arrayOfEmployeesObject[i].commisionPct;
 		var managerId = arrayOfEmployeesObject[i].managerId;
 		var departmentId = arrayOfEmployeesObject[i].departmentId;
-		var row = "<tr><td> "+ employeeId + "</td> <td>"+ firstName +"</td> <td>"+ lastName +"</td> <td>"+ email +"</td> <td>"+ phoneNumber +"</td> <td>"+hireDate+"</td><td>"+salary+"</td><td>"+jobId+"</td><td>"+commisionPct+"</td><td>"+managerId+"</td><td>"+departmentId+"</td><td><input id ="+ employeeId + " type='button' onclick='editEmployee()' value='Edit'><input type='button' value='Delete'></td></tr>";
-		rows = rows + row;	
+		var row = "<tr><td> "+ employeeId + "</td> <td>"+ firstName +"</td> <td>"+ lastName +"</td> <td>"+ email +"</td> <td>"+ phoneNumber +"</td> <td>"+hireDate+"</td><td>"+salary+"</td><td>"+jobId+"</td><td>"+commisionPct+"</td><td>"+managerId+"</td><td>"+departmentId+"</td><td><a href='editemployee.html'><input id ="+ employeeId + " type='button' onclick='readValue()' value='Edit'></a><input type='button' value='Delete'></td></tr>";
+		rows = rows + row;
+	
 	}
 		// join the header and rows insert into table
     table = "<table> "+ header + rows +"</table>"
 	document.getElementById("showData").innerHTML = table;
 }
+function readValue(){
+	var b = employeeId;
+	var x = localStorage.setItem(b);
+	window.location.href="editemployee.js"
+  }	
+
+	  

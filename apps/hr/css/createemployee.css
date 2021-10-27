@@ -13,6 +13,7 @@ h1{
 }
 p{
 	color: red;
+	text-align: center;
 }
 
 .column {
@@ -35,7 +36,7 @@ p{
 		float: left;
 		width: 100%;
 		border: 1px solid blue;
-		border-colopse: colopse;
+		border-collapse: collapse;
 	}
 }
 
@@ -44,7 +45,7 @@ p{
 		float: left;
 		width: 49%;
 		border: 1px solid green;
-		border-colopse: colopse;
+		border-collapse: collapse;
 	}
 }
 
@@ -53,7 +54,7 @@ p{
 		float: left;
 		width: 33%;
         text-align: left;
-		border-colopse: colopse;
+		border-collapse: collapse;
         border: hidden;		
 	}
 }

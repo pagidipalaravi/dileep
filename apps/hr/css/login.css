@@ -1,6 +1,6 @@
 form {
 	margin: 0 auto;
-	text-align::center; 
+	text-align:center; 
 	border:0px solid white;
 	
 }
@@ -9,7 +9,7 @@ form {
   width: 200px;
   height: auto;
   background-color: #F1F0EB;
-  align:center;
+  text-align:center;
 }
 .hide-msg{
 	visibility:hidden;

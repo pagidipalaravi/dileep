@@ -3,26 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="createemployee.css"></link>
-		<script src = "createemployee.js"></script>
+		<link rel="stylesheet" href="../css/createemployee.css"></link>
+		<script src = "../js/createemployee.js"></script>
 	</head>
 	<body onload = "onloadCreateEmployee()">		
 		 <h1>Employee Form</h1>
 		<div class = "employeeForm">
 		 <p id="message"></p>
 		<div class = "row">
-				<div class = "column">
-					<label for= "employeeId" >Employee Id*</label><br>
-					<input type = "text" id = "employeeId" value="" minlength = "3" maxlength = "6"  required placeholder = "Enter your Employee Id" onkeypress="return employeeIdKeyPress()">
-			<div id = "error1"></div>
+			<div class = "column">
+				<label for= "employeeId" >Employee Id*</label><br>
+				<input type = "text" id = "employeeId" value="" minlength = "3" maxlength = "6"  required placeholder = "Enter your Employee Id" onkeypress="return employeeIdKeyPress()">
 			</div>
 			<div class = "column">
-			<label for = "firstName">First Name*</label><br>
-			<input type ="text" id ="firstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required onkeypress="return firstNameKeyPress()">
+				<label for = "firstName">First Name*</label><br>
+				<input type ="text" id ="firstName" value ="" maxlength = "15" placeholder = "Enter your first Name" required onkeypress="return firstNameKeyPress()">
 			</div>
 			<div class = "column">
-			<label for="lastName">Last Name*</label><br>
-			<input type="text" id= "lastName" value = "" maxlength ="10" placeholder = "Enter your Last Name" required onkeypress = "return lastNameKeyPress()">
+				<label for="lastName">Last Name*</label><br>
+				<input type="text" id= "lastName" value = "" maxlength ="10" placeholder = "Enter your Last Name" required onkeypress = "return lastNameKeyPress()">
 			</div>
 			<div class = "column">
 				<label for="email">Email*</label><br>
@@ -37,22 +36,22 @@
 				<input type = "date"   id = "hireDate" value = ""   min ="" max="2030-12-10" required >
 			</div>
 			<div class = "column">
-			<label for = "salary" >Salary*</label><br>
-			<input type = "text" id = "salary" value = ""   maxlength = "6" placeholder="Enter salary" required onkeypress="return salarykeypress()">
+				<label for = "salary" >Salary*</label><br>
+				<input type = "text" id = "salary" value = ""   maxlength = "6" placeholder="Enter salary" required onkeypress="return salarykeypress()">
 			</div>
 			<div class = "column">
-			<label for = "job">Job*</label><br>
-			<select type = "text" id = "job">
-			</select>
+				<label for = "job">Job*</label><br>
+				<select type = "text" id = "job">
+				</select>
 			</div>
 			<div class = "column">
-			<label for = "commisionPct">Commision Pct*</label><br>
-			<input type = "text" id = "commisionPct" required  step="0.01" placeholder="0.00" onkeypress="return commisionPctKeyPress()">
+				<label for = "commisionPct">Commision Pct*</label><br>
+				<input type = "text" id = "commisionPct" required  step="0.01" placeholder="0.00" onkeypress="return commisionPctKeyPress()">
 			</div>
 			<div class = "column">
-			<label for = "manager">Manager Name*</label><br>
-			<select  id = "manager" required >
-			</select>
+				<label for = "manager">Manager Name*</label><br>
+				<select  id = "manager" required >
+				</select>
 			</div>
 			<div class = "column">
 			<label for = "department">Department Name*</label><br>  
