@@ -4,16 +4,19 @@ function editEmployee(key){
 	//read employeeId from the event
 	//let employeeId = document.getElementById("217");
 	//call a javascript function getEmployeeById(){}
+	setValues();
 	getEmployeeById(employeeId);
 	getJobs();
 	getManagers();
 	getDepartments();
 	getCurrntDate();
-	readValue();
+	
 }
-function readValue(){
-	var x = localStorage.getItem(b);
-	console.log("employeeId="+ x);
+function setValues(){
+	var x = localStorage.getItem("value");
+	console.log(`employeeId=${x}`);
+	var resetValue =0;
+	localStorage.setItem("myValue", resetValue);   
 }
 function getEmployeeById(employeeId){
 	// call getEmployeeById rest service

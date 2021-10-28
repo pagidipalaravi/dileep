@@ -1,0 +1,17 @@
+What is the class in JS?
+	ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+	JavaScript Classes are templates for JavaScript Objects.
+	Javascript classes are logic entity,  object  are physical entity. 
+combination of properties and functions
+What is the object in JS?
+	 object is an phycical entity.
+What is constructor ?
+	The constructor method is a special method:
+	It has to have the exact name "constructor"
+	It is used to initialize object properties
+When it is executed?
+	It is executed automatically when a new object is created
+What is purpose of the constructor?
+	it is used to initialize object properties.
+How to Create an object for the class?
+What is the use of new keyword?
