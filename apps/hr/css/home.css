@@ -8,7 +8,10 @@ body {
     background-color: rgb(37, 26, 190);
     position: sticky;
   }
-  
+  #login{
+      float: right;
+      margin-right: 80px;
+  }
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -18,7 +21,7 @@ body {
     font-size: 17px;
   }
   
-  .topnav a:hover {
+   .topnav a:hover {
     background-color: rgb(189, 184, 184);
     color: black;
   }
@@ -27,3 +30,7 @@ body {
     background-color: #e6b05f;
     color: rgb(77, 67, 67);
   }
+  /*.active, .btn:hover {
+    background-color: rgb(240, 234, 234);
+    color: rgb(17, 2, 2);
+  }*/

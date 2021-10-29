@@ -14,10 +14,16 @@ function editEmployee(key){
 }
 function setValues(){
 	var x = localStorage.getItem("value");
-	console.log(`employeeId=${x}`);
-	var resetValue =0;
+	var resetValue = newFunction(x);
 	localStorage.setItem("myValue", resetValue);   
 }
+function newFunction(x) {
+	console.log(`employeeId=${x}`);
+	var resetValue = 0;
+	return resetValue;  
+
+}
+
 function getEmployeeById(employeeId){
 	// call getEmployeeById rest service
 	console.log(event);
