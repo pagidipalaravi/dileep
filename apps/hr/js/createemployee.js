@@ -281,6 +281,26 @@ function employeeForm(){
 	phoneNumber + " " +"Hire Date :" + hireDate + " " + "Salary :" + salary + " " +"Job Id :" + job + " " + "Commision Pct :" + commisionPct +" " + 
 	"Manager Id :" + manager + " " + "Department  :" + department ;
 	console.log(employeeData);
+	axios.post('http://localhost:6010/employees/', {
+		"employeeId":employeeId,
+		"firstName": firstName,
+		"lastName": lastName,
+		"email": email,
+		"phoneNumber": phoneNumber,
+		"hireDate": hireDate,
+		"salary": salary,
+		"jobId": job,
+		"commisionPct": commisionPct,
+		"managerId": manager,
+		"departmentId":department}
+		)
+	  .then(function (response) {
+		console.log(response);
+	  })
+	  .catch(function (error) {
+		console.log(error);
+	  });
+
 }      
  function validateEmployeeId(employeeId){
 	if (employeeId == "" || employeeId == null){

@@ -1,12 +1,12 @@
 async function viewEmployees(){
 	let arrayOfEmployeesObject = [];
-	// Make a request for a user with a given ID
-const response = await axios.get('http://localhost:6010/employees/');
-arrayOfEmployeesObject = response.data.result;
-  
-	// insert table into div
-	console.log(arrayOfEmployeesObject);
-	var table = "";
+		await $.getJSON("../js/model/employee.json",function(data){
+			console.log(data);
+			arrayOfEmployeesObject = data;
+       
+		});
+		console.log(arrayOfEmployeesObject);
+        var table = "";
 	var header = "";
 	var rows = ""; 
 	// create header and insert heading into it.
@@ -34,7 +34,7 @@ arrayOfEmployeesObject = response.data.result;
 	document.getElementById("showData").innerHTML = table;
 }
 
-//function readValue(){
-	//localStorage.setItem("value",firstName);
-	//window.location.href="editemployee.js";*/
-  //}
+function readValue(){
+	localStorage.setItem("value",firstName);
+	window.location.href="editemployee.js";
+}
