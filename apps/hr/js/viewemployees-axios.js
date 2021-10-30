@@ -1,12 +1,23 @@
-function viewEmployees(){
-	//let arrayOfEmployeesObject = [];
-		let arrayOfEmployeesObject = $.getJSON("../js/model/employee.json");
-		//console.log(arrayOfEmployeesObject);
-
+async function viewEmployees(){
+	let arrayOfEmployeesObject = [];
+		//const axios = require('axios');
 	// Make a request for a user with a given ID
-//const response = await axios.get('http://localhost:6010/employees/');
-//arrayOfEmployeesObject = response.data.result;
-  
+const response = await axios.get('http://localhost:6010/employees/');
+arrayOfEmployeesObject = response.data.result;
+  //.then(function (response) {
+    // handle success
+	//return response.data.result;
+  //})
+  //.catch(function (error) {/
+    // handle error
+    //console.log(error);
+  //})
+  //.then(function () {
+    // always executed
+  //});
+	// FETCHING DATA FROM JSON FILE
+	//let arrayOfEmployeesObject = $.getJSON("../model/employee.json")
+	//console.log(arrayOfEmployeesObject);
 	
 	//
 	/*let arrayOfEmployeesObject = [
@@ -24,8 +35,8 @@ function viewEmployees(){
 	{"employeeId":110,"firstName":"John","lastName":"Chen","email":"JCHEN","phoneNumber":"515.124.4269","hireDate":"2005-09-28","salary":8200.0,"jobId":"FI_ACCOUNT","commisionPct":null,"managerId":108,"departmentId":100}
 	]*/
 	// insert table into div
-	//console.log(arrayOfEmployeesObject);
-	/*var table = "";
+	console.log(arrayOfEmployeesObject);
+	var table = "";
 	var header = "";
 	var rows = ""; 
 	// create header and insert heading into it.
@@ -57,7 +68,7 @@ function viewEmployees(){
 	}
 }
 
-function readValue(){
-	localStorage.setItem("value",firstName);
-	window.location.href="editemployee.js";*/
-}
+//function readValue(){
+	//localStorage.setItem("value",firstName);
+	//window.location.href="editemployee.js";*/
+  //}

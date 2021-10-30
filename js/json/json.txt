@@ -26,4 +26,4 @@ how to write JSON Arrays?
 How to Convert a JSON Text to a JavaScript Object
 	A common use of JSON is to read data from a web server, and display the data in a web page.
 	For simplicity, this can be demonstrated using a string as input.
-	First, create a JavaScript string containing JSON syntax
+	First, create a JavaScript string containing JSON syntax.
