@@ -22,4 +22,4 @@ async function viewEmployees(){
 		}
     table = "<table>"+ header + rows +"</table>";
 	document.getElementById("showData").innerHTML = table;
-}
+	}
