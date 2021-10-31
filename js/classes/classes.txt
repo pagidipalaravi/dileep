@@ -1,0 +1,72 @@
+What is the class in JS?
+	Classes are templates or blueprints for JavaScript Objects.
+	Class is logic entity where as object is physical entity. 
+	Class is a combination of properties and functions.
+	Class feature is introduced in ES6.	
+How to create a class in js?
+	We will create a class by using class keyword followed by class name.
+	We have to write a special function named as "constructor" by declaring parameaters if any.
+	Syntax:
+		class ClassName {
+		    constructor(para1,para2){
+				this.para1 = para1;
+				this.para2 = para2;
+			}
+		}
+	Example:
+		class Employee {
+			constructor(employeeId, firstName) {
+				this.employeeId = employeeId;
+				this.firstName = firstName;
+			}
+		}
+How to define properties in class?
+	Syntax:
+		class ClassName{
+		    para1 = "";
+			para2 = "";
+		    constructor(para1,para2){
+				this.para1 = para1;
+				this.para2 = para2;
+			}
+		}
+	Example:
+		class Employee{
+			employeeId = "";
+			firstName = "";
+			constructor(employeeId, firstName) {
+				this.employeeId = employeeId;
+				this.firstName = firstName;
+			}
+		}
+How to write method in a class?
+	Syntax:
+		methodName(para1, para2){
+			//TODO method code here.
+		}
+	Example:
+		 getEmployees(){
+			let employee = new Employee(101 , dileep);
+			return this.employeeId + this.firstName;
+		}
+What is the object in JS?
+	 We will construct an object by using the class.
+	 Object is an phycical entity, class is a logic entity.
+What is constructor ?
+	The constructor is a special function.
+	It has to have the exact name as "constructor".
+	It is used to initialize object properties.
+When it is executed?
+	It is executed automatically when a new object is created.
+What is purpose of the constructor?
+	It is used to initialize object properties.
+How to create an object for the class?
+	By using new keyword.
+	After new keyword we have to provide class name and arguments if any.
+What is the use of new keyword?
+    We will create new object for the class by using new keyword.
+What is class expression?
+What is the use of class expression?
+	Syntax:
+	Example:
+How to define getters and setters for a class?
