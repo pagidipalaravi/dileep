@@ -31,6 +31,7 @@ function viewEmployees(){
 		let commisionPct = arrayOfEmployeesObject[i].commisionPct;
 		let managerId = arrayOfEmployeesObject[i].managerId;
 		let departmentId = arrayOfEmployeesObject[i].departmentId;
+		
 		let row = `<tr><td>${employeeId}</td> <td>${firstName}</td> <td>${lastName}</td> <td>${email}</td> <td>${phoneNumber}</td> <td>${hireDate}</td><td>${salary}</td><td>${jobId}</td><td>${commisionPct}</td><td>${managerId}</td><td>${departmentId}</td><td><a href='editemployee.html'><input id =${employeeId} type='button' onclick='readValue()' value='Edit'></a><input type='button' value='Delete'></td></tr>`;
 		rows = rows + row;
 	}

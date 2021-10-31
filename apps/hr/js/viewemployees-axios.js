@@ -1,6 +1,12 @@
 async function viewEmployees(){
+	let status="";
+	let message="";
 	let arrayOfEmployeesObject = [];
-	const response = await axios.get('http://localhost:6010/employees/');
+	// Reading the employeee data from rest service by using axios javascript library
+	let response = await axios.get('http://localhost:6010/employees/');
+	debugger;
+	status = response.data.status;
+	message = response.data.message;
 	arrayOfEmployeesObject = response.data.result;
 	let table = "";
 	let header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
