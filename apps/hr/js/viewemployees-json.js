@@ -3,15 +3,14 @@ async function viewEmployees(){
 		await $.getJSON("../js/model/employee.json",function(data){
 			console.log(data);
 			arrayOfEmployeesObject = data;
-       
 		});
 		console.log(arrayOfEmployeesObject);
-        var table = "";
-	var header = "";
-	var rows = ""; 
-	// create header and insert heading into it.
-	var header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
-	// created loop to retrive the data from the arrayOfEmployeesObject.It also create the row 
+        let table = "";
+		let header = "";
+		let rows = ""; 
+		// create header and insert heading into it.
+		let header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
+		// created loop to retrive the data from the arrayOfEmployeesObject.It also create the row 
 	for(let i = 0; i < arrayOfEmployeesObject.length; i++){
 	    let employeeId = arrayOfEmployeesObject[i].employeeId;
 		let firstName = arrayOfEmployeesObject[i].firstName; 
@@ -26,14 +25,10 @@ async function viewEmployees(){
 		let departmentId = arrayOfEmployeesObject[i].departmentId;
 		let row = `<tr><td>${employeeId}</td> <td>${firstName}</td> <td>${lastName}</td> <td>${email}</td> <td>${phoneNumber}</td> <td>${hireDate}</td><td>${salary}</td><td>${jobId}</td><td>${commisionPct}</td><td>${managerId}</td><td>${departmentId}</td><td><a href='editemployee.html'><input id =${employeeId} type='button' onclick='readValue()' value='Edit'></a><input type='button' value='Delete'></td></tr>`;
 		rows = rows + row;
-		//var employeeDetailes = employeeId + firstName + lastName;
-		//console.lo(employeeId);
 	}
-		// join the header and rows insert into table
     table = "<table> "+ header + rows +"</table>";
 	document.getElementById("showData").innerHTML = table;
 }
-
 function readValue(){
 	localStorage.setItem("value",firstName);
 	window.location.href="editemployee.js";

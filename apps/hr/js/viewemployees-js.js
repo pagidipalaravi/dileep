@@ -1,6 +1,6 @@
 function viewEmployees(){
-
-		let arrayOfEmployeesObject = [
+	let arrayOfEmployeesObject =
+	[
 	{"employeeId":217,"firstName":"surya","lastName":"pagidipala","email":"surya123@gmail.com","phoneNumber":"9182550827","hireDate":"2021-01-15","salary":10000.0,"jobId":"IT_PROG","commisionPct":null,"managerId":103,"departmentId":60},
 	{"employeeId":100,"firstName":"Steven","lastName":"King","email":"SKING","phoneNumber":"515.123.4567","hireDate":"2003-06-17","salary":24000.0,"jobId":"AD_PRES","commisionPct":null,"managerId":null,"departmentId":90},
 	{"employeeId":101,"firstName":"Neena","lastName":"Kochhar","email":"NKOCHHAR","phoneNumber":"515.123.4568","hireDate":"2005-09-21","salary":17000.0,"jobId":"AD_VP","commisionPct":null,"managerId":100,"departmentId":90},
@@ -13,15 +13,12 @@ function viewEmployees(){
 	{"employeeId":108,"firstName":"Nancy","lastName":"Greenberg","email":"NGREENBE","phoneNumber":"515.124.4569","hireDate":"2002-08-17","salary":12008.0,"jobId":"FI_MGR","commisionPct":null,"managerId":101,"departmentId":100},
 	{"employeeId":109,"firstName":"Daniel","lastName":"Faviet","email":"DFAVIET","phoneNumber":"515.124.4169","hireDate":"2002-08-16","salary":9000.0,"jobId":"FI_ACCOUNT","commisionPct":null,"managerId":108,"departmentId":100},
 	{"employeeId":110,"firstName":"John","lastName":"Chen","email":"JCHEN","phoneNumber":"515.124.4269","hireDate":"2005-09-28","salary":8200.0,"jobId":"FI_ACCOUNT","commisionPct":null,"managerId":108,"departmentId":100}
-	]
+	];
 	// insert table into div
-	//console.log(arrayOfEmployeesObject);
-	var table = "";
-	var header = "";
-	var rows = ""; 
-	// create header and insert heading into it.
-	var header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
-	// created loop to retrive the data from the arrayOfEmployeesObject.It also create the row 
+	let table = ""; 
+	let header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th><th>Action</th></tr>";
+	let rows = "";
+	// loop to retrive the data from the arrayOfEmployeesObject
 	for(let i = 0; i < arrayOfEmployeesObject.length; i++){
 	    let employeeId = arrayOfEmployeesObject[i].employeeId;
 		let firstName = arrayOfEmployeesObject[i].firstName; 
@@ -36,16 +33,11 @@ function viewEmployees(){
 		let departmentId = arrayOfEmployeesObject[i].departmentId;
 		let row = `<tr><td>${employeeId}</td> <td>${firstName}</td> <td>${lastName}</td> <td>${email}</td> <td>${phoneNumber}</td> <td>${hireDate}</td><td>${salary}</td><td>${jobId}</td><td>${commisionPct}</td><td>${managerId}</td><td>${departmentId}</td><td><a href='editemployee.html'><input id =${employeeId} type='button' onclick='readValue()' value='Edit'></a><input type='button' value='Delete'></td></tr>`;
 		rows = rows + row;
-	
 	}
-		// join the header and rows insert into table
-    table = "<table> "+ header + rows +"</table>";
+	table = "<table> "+ header + rows +"</table>";
 	document.getElementById("showData").innerHTML = table;
-
-	
-}
-
-function readValue(){
-	localStorage.setItem("value",firstName);
-	window.location.href="editemployee.js";
+	function readValue(){
+		localStorage.setItem("value",firstName);
+		window.location.href="editemployee.js";
+	}
 }
