@@ -4,7 +4,7 @@ What is the class in JS?
 	Class is a combination of properties and functions.
 	Class feature is introduced in ES6.	
 How to create a class in js?
-	We will create a class by using class keyword followed by class name.
+	We can create a class by using class keyword followed by class name.
 	We have to write a special function named as "constructor" by declaring parameaters if any.
 	Syntax:
 		class ClassName {
@@ -40,6 +40,7 @@ How to define properties in class?
 			}
 		}
 How to write method in a class?
+	//write something about the method
 	Syntax:
 		methodName(para1, para2){
 			//TODO method code here.
@@ -50,19 +51,24 @@ How to write method in a class?
 			return this.employeeId + this.firstName;
 		}
 What is the object in JS?
-	 We will construct an object by using the class.
+	 Object is an instance of a class.
+	 We will construct an object by using the new keyword and constructor.
 	 Object is an phycical entity, class is a logic entity.
 What is constructor ?
 	The constructor is a special function.
 	It has to have the exact name as "constructor".
 	It is used to initialize object properties.
-When it is executed?
-	It is executed automatically when a new object is created.
+When constructor is executed?
+	Constructor is executed automatically when a new object is created.
 What is purpose of the constructor?
 	It is used to initialize object properties.
 How to create an object for the class?
 	By using new keyword.
 	After new keyword we have to provide class name and arguments if any.
+	Syntax:
+			//TODO
+	Example:
+		//TODO
 What is the use of new keyword?
     We will create new object for the class by using new keyword.
 What is class expression?
