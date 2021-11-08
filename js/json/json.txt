@@ -1,14 +1,13 @@
 What is JSON?
 	JSON stands for JavaScript Object Notation
-	JSON is a lightweight data interchange format
-	JSON is language independent *
-	JSON is "self-describing" and easy to understand
-	The JSON syntax is derived from JavaScript object notation syntax, 
-	but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.
+	JSON is a lightweight data interchange format becasue it doesn't have tags.
+	We can share the JSON data to and from frontend to middleware.
+	JSON is language independent. Why because it doesn't have tags and it is just text based file.
+	JSON is "self-describing" and easy to understand.
 How the JSON format evaluates to JavaScript object?
 	The JSON format is syntactically identical to the code for creating JavaScript objects.		
 	Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.
-	JSON Syntax Rules are:
+JSON Syntax Rules are:
 	Data is in name/value pairs
 	Data is separated by commas
 	Curly braces hold objects
@@ -17,13 +16,13 @@ How data is stored in json?
 	Data is stored in the key and value format.
 	JSON data is written as name/value pairs, just like JavaScript object properties.
 	A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value.
-How to write JSON Objects/
+How to write JSON Objects
 	JSON objects are written inside curly braces.
 	Just like in JavaScript, objects can contain multiple name/value pairs.
 how to write JSON Arrays?
 	JSON arrays are written inside square brackets.
 	Just like in JavaScript, an array can contain objects
-How to Convert a JSON Text to a JavaScript Object
+How to Convert a JSON Text to a JavaScript Object.
 	A common use of JSON is to read data from a web server, and display the data in a web page.
 	For simplicity, this can be demonstrated using a string as input.
 	First, create a JavaScript string containing JSON syntax.

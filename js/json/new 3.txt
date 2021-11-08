@@ -1,0 +1,12 @@
+var arrya = [1,3, 2, 6,];
+for(var i= 0;i < arrya.length; i++){
+	math.max(i);
+	console.log(math.max(i));
+}
+
+<p class="red"></p>
+<style>
+	p.red {
+		
+	}
+</style>
