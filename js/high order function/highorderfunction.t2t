@@ -1,0 +1,14 @@
+What is higher order function in javascript?
+	 A function that receives another function as an argument or that returns a new function or both is called Higher-order functions. 
+	 Higher-order functions are only possible because of the First-class function.
+	 Example:
+		array.filter(function(currentValue, index, arr), thisValue)
+		https://www.geeksforgeeks.org/difference-between-first-class-and-higher-order-functions-in-javascript/
+What is higher order function in javascript?
+		HIGHER-ORDER CLASS OF BEHAVIOR
+		A class that includes within it other classes that can themselves function as operant classes, as when generalized imitation includes all the component imitations that could be separately reinforced.
+what is a promise?
+	The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+What is NAN?
+	In JavaScript, NaN stands for Not a Number. It represents a value which is not a valid number. 
+	It can be used to check whether a number entered is a valid number or not a number. 

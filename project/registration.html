@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta >
 		<link rel="stylesheet" href="registration.css">
 	</head>
 	<body>
@@ -10,10 +11,8 @@
 		</div>
 		<hr>
 		<form>
-				<div class="f1">
-			<p>Please note that the TCS NextStep initiative is available in the India geography.<br> Applications from other countries will not be taken into account.</p>
-			
-					
+			<div class="f1">
+			<p>Please note that the TCS NextStep initiative is available in the India geography.<br> Applications from other countries will not be taken into account.</p>	
 				 <label>Prefix:</label>
                 <select id="prefix" name="prefix">
                     <option value="select">select</option>
@@ -131,7 +130,7 @@
 				<div class="dob">
 				 <label for="email">Email id*</label><br>
 				 <input type="email" id="email" placeholder="Email">
-				 <p>It is important to enter your email Id carefully as it will be used for all communications from TCS.<p/>
+				 <p>It is important to enter your email Id carefully as it will be used for all communications from TCS.</p>
 				</div>
 					<div class="dob">
 						<label for="mobilenumber">Mobile Number*</label><br>
@@ -139,14 +138,51 @@
 					</div>
 				<div class="dob">
 					 <label for="college">Institute name*</lable>
-					 <input type="text" value="college" id="college" placeholder="Institute name">
+					 <input type="text" value="" id="college" placeholder="Institute name" size="50">
 				</div>
 				<div class="dob">
 					<label for="qf">Qualification*</lable>
-					 <input type="text" value="qf" id="qf" placeholder="Branch">
+					 <input type="text" value="" id="qf" placeholder="Branch" size="50">
 				</div>
+				<div class="dob">
+						<label for="yof">Year of passing (for highest qualification) *</label>
+						<select>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+						</select>
+				</div>
+				<div id="myDropdown" class="dropdown-content">
+					<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+					<a href="#about">About</a>
+					<a href="#base">Base</a>
+					<a href="#blog">Blog</a>
+					<a href="#contact">Contact</a>
+					<a href="#custom">Custom</a>
+					<a href="#support">Support</a>
+					<a href="#tools">Tools</a>
+				  </div>
 			</div>
 		</form>
+		<script>   
+		function filterFunction() {
+			var input, filter, a, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			div = document.getElementById("myDropdown");
+			a = div.getElementsByTagName("a");
+			for (i = 0; i < a.length; i++) {
+				txtValue = a[i].textContent || a[i].innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				a[i].style.display = "";
+				} else {
+				a[i].style.display = "none";
+				}
+			}
+			}
+		</script>
 	</body>
 </html>
      

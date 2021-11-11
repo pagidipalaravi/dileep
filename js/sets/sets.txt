@@ -1,0 +1,18 @@
+What is a set in js?
+	A JavaScript Set is a collection of unique values.
+	Each value can only occur once in a Set.
+
+How to create a sets?
+	You can create a JavaScript Set by:
+		Passing an Array to new Set()
+		Create a new Set and use add() to add values
+		Create a new Set and use add() to add variables.
+
+What is the new set() constructor?
+	Create a Set from an Array
+WHat is the use Add() in sets?
+	Adding new elements to a Set.
+What is the use of forEach() in sets?
+	forEach() calls a function for each element.
+What is  values() method in sets?
+	Now you can use the Iterator object to access the elements
