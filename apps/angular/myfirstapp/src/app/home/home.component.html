@@ -1,0 +1,77 @@
+  <h1>Employee Form</h1>
+    <div class="employeeForm">
+        <!--p [ngClass]="[error !=true ? 'success-message': 'error-message'] ">{{message}}</p-->
+        <form name="form" >
+            <div class="row">
+                <div class="column">
+                    <label for="employeeId">Employee Id*</label><br>
+                    <input type="text" id="employeeId" class="form-control" value="" minlength="3" maxlength="6"
+                        required placeholder="Enter your Employee Id" onkeypress="return employeeIdKeyPress()">
+                </div>
+                <div class="column">
+                    <label for="firstName">First Name*</label><br>
+                    <input type="text" id="firstName" value="" maxlength="15" placeholder="Enter your first Name"
+                        required onkeypress="return firstNameKeyPress()">
+               </div>
+                <div class="column">
+                    <label for="lastName">Last Name*</label><br>
+                    <input type="text" id="lastName" value="" maxlength="10" placeholder="Enter your Last Name" required
+                        onkeypress="return lastNameKeyPress()">
+                </div>
+                <div class="column">
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        placeholder="Enter your Email" required onkeypress="return emailKeyPress()">
+                </div>
+                <div class="column">
+                    <label for="phoneNumber">Phone Number*</label><br>
+                    <input type="tel" id="phoneNumber" value="" maxlength="10" pattern="[1-9]{1}[0-9]{9}"
+                        placeholder="Enter Phone Number" required onkeypress="return phoneNumberKeyPress()">
+                </div>
+                <div class="column">
+                    <label for="hireDate">Hire Date*</label><br>
+                    <input type="date" id="hireDate" value="" min="" max="2030-12-10" required>
+                </div>
+                <div class="column">
+                    <label for="salary">Salary*</label><br>
+                    <input type="text" id="salary" value="" maxlength="6" placeholder="Enter salary" required
+                        onkeypress="return salarykeypress()">
+                </div>
+                <div class="column">
+                    <label for="job">Job*</label><br>
+                    <select type="text" id="job" type="search">
+                        <option value="100">IT_PROG</option>
+                        <option value="101">AD_VP</option>
+                        <option value="102">FI_MGR</option>
+                        <option value="103">FI_ACCOUNT</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="commisionPct">Commision Pct*</label><br>
+                    <input type="text" id="commisionPct" required step="0.01" placeholder="0.00"
+                        onkeypress="return commisionPctKeyPress()">
+                </div>
+                <div class="column">
+                    <label for="manager">Manager Name*</label><br>
+                    <select id="manager" required type="search">
+                        <option value="cod114">madhu</option>
+                        <option value="cod117">Ravi</option>
+                        <option value="cod115">raghu</option>
+                        <option vaslue="cod118">krishna</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="department">Department Name*</label><br>
+                    <select id="department" required type="search">
+                    </select>
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn" type="submit" onclick="employeeForm()">submit</button>
+            </div>
+    </form>
+    <footer>
+        <div>
+            <a href="#">About</a>
+        </div>
+    </footer>

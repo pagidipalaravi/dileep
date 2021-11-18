@@ -1,0 +1,4 @@
+ What is the difference between user and schema in Oracle Database?		
+ How to export and import schema 11g to 21c?
+ How to know when to enable or disable commit?
+ 

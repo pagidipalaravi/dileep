@@ -1,6 +1,6 @@
 function onLoad(){
 	console.log("This is  global scope function calling from html");
-	//regularFunction();
+    regularFunction();
 }	
 (function (x) {  
 	console.log("This is IIFE global scope function");

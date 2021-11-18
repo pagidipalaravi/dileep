@@ -1,0 +1,92 @@
+*{
+	margin:0px;
+	
+}
+input{
+	border-radius: 5px;
+}
+
+body{
+	background-color: aliceblue;
+    margin: 0px;
+}
+h1{
+	text-align:center;
+	background-color: rgb(255, 0, 200); 
+	color: white;
+}
+.employeeForm {
+	
+		margin-left:200px;
+}
+p{
+	color: red;
+	text-align: center;
+}
+.column {
+		border: 1px solid black;
+		text-align: center;	
+	}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) and (min-width: 320px)  {
+	.column {
+		float: left;
+		width: 100%;
+		border: 1px solid blue;
+		border-collapse: collapse;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.column {
+		float: left;
+		width: 49%;
+		border: 1px solid green;
+		border-collapse: collapse;
+	}
+}
+@media screen and (min-width: 1023px) {
+	.column {
+		float: left;
+		width: 33%;
+        text-align: left;
+		border-collapse: collapse;
+        border: hidden;		
+	}
+}
+.hide-msg{
+	visibility:hidden;
+}
+.error-msg{
+	visibility:visible;
+	color : red;
+}
+.success-msg{
+	visibility:visible;
+}
+
+.center{
+	text-align: center;
+}
+.btn{
+	background-color: rgb(14, 226, 29);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+select{
+	size : 20px;
+} 
+
