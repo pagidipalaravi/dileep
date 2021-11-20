@@ -2,4 +2,29 @@
     Hello {{ getFullName() }} your employee id is{{ employeeId }} and your mail id
     is {{ emailId }}
 </p>
-<button [disabled]="disabled">submit</button>
+<div class="form">
+   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+         <label>Email</label>
+         <input type="text" formControlName="email" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && formControls.email.errors }" />
+         <div *ngIf="submitted && formControls.email.errors" class="invalid-feedback">
+            <div *ngIf="formControls.email.errors.required">Email cannot be left blank</div>
+            <div *ngIf="formControls.email.errors.email">Please enter a valid email address</div>
+         </div>
+      </div>
+      <div class="form-group">
+         <label>Password</label>
+         <input type="password" formControlName="password" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && formControls.password.errors }" />
+         <div *ngIf="submitted && formControls.password.errors" class="invalid-feedback">
+            <div *ngIf="formControls.password.errors.required">Password cannot be left blank</div>
+            <div *ngIf="formControls.password.errors.minlength">Password must be at least 6 characters</div>
+            <div *ngIf="formControls.password.errors.maxlength">Password must not be more than 20 characters</div>
+         </div>
+      </div>
+      <div class="form-group">
+         <button class="btn btn-primary">Register</button>
+      </div>
+   </form>
+</div>

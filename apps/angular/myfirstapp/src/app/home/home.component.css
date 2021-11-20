@@ -9,24 +9,20 @@ input{
 body{
 	background-color: aliceblue;
     margin: 0px;
+	display: flex;
 }
 h1{
 	text-align:center;
 	background-color: rgb(255, 0, 200); 
 	color: white;
 }
-.employeeForm {
-	
-		margin-left:200px;
-}
+
+
 p{
 	color: red;
 	text-align: center;
 }
-.column {
-		border: 1px solid black;
-		text-align: center;	
-	}
+
 .row:after {
 	content: "";
 	display: table;
@@ -53,10 +49,10 @@ p{
 @media screen and (min-width: 1023px) {
 	.column {
 		float: left;
-		width: 33%;
+		width: 33.3%;
         text-align: left;
 		border-collapse: collapse;
-        border: hidden;		
+		border: hidden;	
 	}
 }
 .hide-msg{
@@ -89,4 +85,17 @@ p{
 select{
 	size : 20px;
 } 
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;  
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.699);
+	color: white;
+	text-align: right;
+	padding: 15px;
+	height: 50px;
+	margin-right: 20px;
+  }
+
 

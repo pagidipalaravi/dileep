@@ -1,0 +1,14 @@
+ hello all this is Dileep ,good morning all ,how are you? are able to here me clearly?
+ 
+Tell me about yourself?
+	My name is Dileep Mummidi. you can call me Dileep.
+	I am from Telangana and native of Hyderabad.
+	I completed my graduation from Jntu hyderabad in year 2020
+	After complete my graduation i joined as a intern in aktrix technologies.
+	After completing as a internship, I have been employed into Aktrix technologies.
+	I have 1 year  experience in IT Industry.
+	I started my carrer as a software developer and my primary skillset is the UI development.
+	My secondary skill is java and Sql.I can work on java and database also.  
+	I have been involved in devloping mockups, wireframes, functional documents and low level design documents.
+	I am a Quick learner and intreted in learning new technologies. 
+	Currently i am working for a project IFFCO and involeving in development as well as support.

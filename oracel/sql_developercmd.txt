@@ -1,3 +1,8 @@
+alter session set "_ORACLE_SCRIPT"=true;
+create user HR identified by HR;
+ALTER USER HR IDENTIFIED BY HR ACCOUNT UNLOCK;
+ALTER SESSION SET current_schema = HR;
+
 How to create an schema in sql deoveloper?
 	syntax:
 	create user schema identified by passward;
