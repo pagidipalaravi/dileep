@@ -1,73 +1,112 @@
-  <h1>Employee Form</h1>
-    <div class="employeeForm">
-        <!--p [ngClass]="[error !=true ? 'success-message': 'error-message'] ">{{message}}</p-->
-        <form id="form" FormGroup='registrationForm' (ngsubmit)="submitData()">
-            <div class="row">
-                <div class="column">
+<h1>Employee Form</h1>
+<div class="employeeForm">
+       <form class="form-floating" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="column">
+                <div class="form-group">
                     <label for="employeeId">Employee Id*</label><br>
-                    <input type="text" id="employeeId"   minlength="3" maxlength="6"
-                        required placeholder="Enter your Employee Id" >
+                    <input type="text" id="employeeId" minlength="3" maxlength="6" required
+                        placeholder="Enter your Employee Id" class="form-control" formControlName="employeeId"
+                        [ngClass]="{ 'is-invalid': submitted && formControls.employeeId.errors }" />
+                    <div *ngIf="submitted && formControls.employeeId.errors" class="invalid-feedback">
+                        <div *ngIf="formControls.employeeId.errors.required">Employee Id cannot be left blank</div>
+                        <div *ngIf="formControls.employeeId.errors.pattern">Please enter a Employee Id</div>
+                    </div>
                 </div>
-                <div class="column">
-                    <label for="firstName">First Name*</label><br>
-                    <input type="text" id="firstName" class="Form-control" name = "firstName" value="" maxlength="15" placeholder="Enter your first Name"
-                      required >
-               </div>
-                <div class="column">
-                    <label for="lastName">Last Name*</label><br>
-                    <input type="text" id="lastName" class="Form-control" maxlength="10" placeholder="Enter your Last Name" required
-                        >
+            </div>
+            <div class="column">
+                <div class="form-group">
+                <label for="firstName">First Name*</label><br>
+                <input type="text" id="firstName" class="form-control" name="firstName" value="" maxlength="15"
+                    placeholder="Enter your first Name" required 
+                    formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && formControls.firstName.errors }" />
+                <div *ngIf="submitted && formControls.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="formControls.firstName.errors.required">First Name cannot be left blank</div>
+                    <div *ngIf="formControls.firstName.errors.pattern">Please enter your First Name</div>
                 </div>
-                <div class="column">
-                    <label for="email">Email*</label><br>
-                    <input type="email" id="email" class="Form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        placeholder="Enter your Email" required >
                 </div>
-                <div class="column">
+            </div>
+            <div class="column">
+                <div class="form-group">
+                <label for="lastName">Last Name*</label><br>
+                <input type="text" id="lastName" class="form-control" formControlName="lastName" name="lastName" maxlength="10"
+                    placeholder="Enter your Last Name" required
+                    [ngClass]="{ 'is-invalid': submitted && formControls.lastName.errors }" />
+                    <div *ngIf="submitted && formControls.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="formControls.lastName.errors.required">Last Name cannot be left blank</div>
+                        <div *ngIf="formControls.lastName.errors.pattern">Please enter your Last Name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" formControlName="email" class="form-control" placeholder="Enter your Email"
+                        [ngClass]="{ 'is-invalid': submitted && formControls.email.errors }" />
+                    <div *ngIf="submitted && formControls.email.errors" class="invalid-feedback">
+                        <div *ngIf="formControls.email.errors.required">Email cannot be left blank</div>
+                        <div *ngIf="formControls.email.errors.email">Please enter a valid email address</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form-group">
                     <label for="phoneNumber">Phone Number*</label><br>
-                    <input type="tel" id="phoneNumber" class="Form-control" maxlength="10" pattern="[1-9]{1}[0-9]{9}"
-                        placeholder="Enter Phone Number" required >
+                    <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" maxlength="10"
+                        placeholder="Enter Phone Number" required formControlName="phoneNumber"
+                        [ngClass]="{ 'is-invalid': submitted && formControls.phoneNumber.errors }" />
+                    <div *ngIf="submitted && formControls.phoneNumber.errors" class="invalid-feedback">
+                        <div *ngIf="formControls.phoneNumber.errors.required">Phone Number cannot be left blank</div>
+                        <div *ngIf="formControls.phoneNumber.errors.pattern">Please, Enter 10 digit Mobile Number</div>
+                    </div>
                 </div>
-                <div class="column">
-                    <label for="hireDate">Hire Date*</label><br>
-                    <input type="date" id="hireDate" class="Form-control" min="" max="2030-12-10" required>
-                </div>
-                <div class="column">
+            </div>
+            <div class="column">
+                <label for="hireDate">Hire Date*</label><br>
+                <input type="date" id="hireDate"  min="" max="2030-12-10" required>
+            </div>
+            <div class="column">
+                <div class="form-group">
                     <label for="salary">Salary*</label><br>
-                    <input type="text" id="salary" class="Form-control" maxlength="6" placeholder="Enter salary" required
-                        >
-                </div>
-                <div class="column">
-                    <label for="job">Job*</label><br>
-                    <select type="text" id="job" type="search">
-                        <option value="100">IT_PROG</option>
-                        <option value="101">AD_VP</option>
-                        <option value="102">FI_MGR</option>
-                        <option value="103">FI_ACCOUNT</option>
-                    </select>
-                </div>
-                <div class="column">
-                    <label for="commisionPct">Commision Pct*</label><br>
-                    <input type="text" id="commisionPct" required step="0.01" placeholder="0.00"
-                        >
-                </div>
-                <div class="column">
-                    <label for="manager">Manager Name*</label><br>
-                    <select id="manager" required type="search">
-                        <option value="cod114">madhu</option>
-                        <option value="cod117">Ravi</option>
-                        <option value="cod115">raghu</option>
-                        <option vaslue="cod118">krishna</option>
-                    </select>
-                </div>
-                <div class="column">
-                    <label for="department">Department Name*</label><br>
-                    <select id="department" required type="search">
-                    </select>
+                    <input type="text" id="salary" class="form-control" maxlength="6" placeholder="Enter salary"
+                        required formControlName="salary"
+                        [ngClass]="{ 'is-invalid': submitted && formControls.salary.errors }" />
+                    <div *ngIf="submitted && formControls.salary.errors" class="invalid-feedback">
+                        <div *ngIf="formControls.salary.errors.required">Salary cannot be left blank</div>
+                        <div *ngIf="formControls.salary.errors.pattern">Please, Enter salary</div>
+                    </div>
                 </div>
             </div>
-            <div class="center">
-                <button class="btn" type="submit">submit</button>
+            <div class="column">
+                <label for="job">Job*</label><br>
+                <select type="text" id="job" type="search" class="form-select">
+                    <option value="100">IT_PROG</option>
+                    <option value="101">AD_VP</option>
+                    <option value="102">FI_MGR</option>
+                    <option value="103">FI_ACCOUNT</option>
+                </select>
             </div>
+            <div class="column">
+                <label for="commisionPct">Commision Pct*</label><br>
+                <input type="text" id="commisionPct" required step="0.01" placeholder="0.00" class="form-control">
+            </div>
+            <div class="column">
+                <label for="manager">Manager Name*</label><br>
+                <select id="manager" required type="search" class="form-select">
+                    <option value="cod114">madhu</option>
+                    <option value="cod117">Ravi</option>
+                    <option value="cod115">raghu</option>
+                    <option vaslue="cod118">krishna</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="department">Department Name*</label><br>
+                <select id="department" required type="search">
+                </select>
+            </div>
+        </div>
+        <div class="Form-control">
+            <button class="btn" type="submit">submit</button>
+        </div>
     </form>
-    <footer class="footer">about</footer>
+    <footer class="footer">about</footer> 

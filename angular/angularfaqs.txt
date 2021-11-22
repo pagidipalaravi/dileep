@@ -1,0 +1,50 @@
+What is Angular?
+	Angular is a javascript framework which allows you to create single page applications.
+==
+What is SPA?
+	SPA is a web application, where all functionalities are framed on a single page.
+	SPA has only one html file and bunch of html templates, javascript and CSS files.
+	In SPA, all the html templates, css and java script files are rendered on the same page dynamically.
+	User navigates from one section to another section of the page by clicking on links or buttons without navigating to different pages.
+	IT looks like as a mobile application, they give better user experience.
+==
+What is difference between angularJs and angular?
+	Architecture
+		AngularJS uses MVC or Model-View-Controller architecture
+			Model contains the business logic -- js file
+			Controller gets the data from Model, it process the data and exposes data to view. -- js file
+			View shows data to the users. -- html file
+		Angular replaces controllers with components.
+		Components are nothing but directives with a predefined template.					
+	Language
+		AngularJS uses JavaScript language, which is a dynamically typed language.
+		Angular uses TypeScript language, which is a statically typed language and is a superset of JavaScript.
+	Mobile Support
+		AngularJS does not provide mobile support.
+		Angular is supported by all popular mobile browsers.
+	Version
+	Angularjs was introduced in 2010. it is written in javascript, It is also called as Angular1
+	Angular framework was introduced in 2016, it uses typescript as programming language.
+	It is completly rewritten framework, it is not related with angularjs. we are calling it as Angular2.
+		Angular2
+		Angular3 xxx
+		Angular4
+		...
+		...
+		Angular11
+		Angular12		
+==
+What is the difference between javascript and typescript?
+	javascript runs in the broswer directly, compilation phase is not required.
+	typescript is a superset of JavaScript.
+	typescript won't run in the brwoser directly, it requires compilation phase.
+	Angular uses the Ahead-of-time (AOT) compiler.
+	compiler will takes ts file as input and generates js file as output.
+==
+How to install angular?
+	Install nodejs
+	Install npm
+	Install typescript
+		npm install -g typescript
+	Install angular
+		npm install -g @angular/cli

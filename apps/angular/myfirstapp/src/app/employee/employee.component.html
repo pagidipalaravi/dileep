@@ -1,7 +1,4 @@
-<p>
-    Hello {{ getFullName() }} your employee id is{{ employeeId }} and your mail id
-    is {{ emailId }}
-</p>
+
 <div class="form">
    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
@@ -24,7 +21,7 @@
          </div>
       </div>
       <div class="form-group">
-         <button class="btn btn-primary">Register</button>
+         <button class="btn btn-primary" type="submit">Register</button>
       </div>
    </form>
 </div>

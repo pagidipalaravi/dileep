@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { EditemployeeComponent } from './editemployee/editemployee.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     EditemployeeComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    ViewemployeeComponent
   ],
   imports: [
     BrowserModule,

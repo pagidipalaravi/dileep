@@ -9,14 +9,6 @@ import { Validators,FormGroup, FormBuilder } from "@angular/forms";
 })
 
 export class EmployeeComponent implements OnInit {
-     employeeId: number = 101;
-    firstName: string = 'dileep';
-    lastName: string = 'mummidi';
-    emailId: string = 'dileep@gmail.com';
-  
-    getFullName() {
-      return this.firstName + '' + this.lastName;
-    }
     myForm: FormGroup | any;
     submitted = false;
     constructor(private formBuilder: FormBuilder) {}
