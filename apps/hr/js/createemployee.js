@@ -1,4 +1,8 @@
-//Return true when we press space. 
+      
+	                    
+						
+						
+						          //Return true when we press space. 
 function isSpace(keyCode) {
 	let isSpace = false;
 	if (keyCode == 32) {

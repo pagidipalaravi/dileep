@@ -1,0 +1,86 @@
+Why we need to use the rxjs liberiy in angular?
+	RxJS is a library for composing asynchronous and event-based programs by using observable sequences. 
+	It provides one core type, the Observable, satellite types (Observer, Schedulers, Subjects) and operators inspired by Array#extras (map, filter, reduce, every, etc) to allow handling asynchronous events as collections.
+What is observable in rxjs?
+	represents the idea of an invokable collection of future values or events.
+Observer: is a collection of callbacks that knows how to listen to values delivered by the Observable.
+Subscription: represents the execution of an Observable, is primarily useful for cancelling the execution.
+Operators: are pure functions that enable a functional programming style of dealing with collections with operations like map, filter, concat, reduce, etc.
+Subject: is equivalent to an EventEmitter, and the only way of multicasting a value or event to multiple Observers.
+Schedulers: are centralized dispatchers to control concurrency, allowing us to coordinate when computation happens on e.g. setTimeout or requestAnimationFrame or others.
+  
+HTTP response status codes
+	Informational responses (100–199)
+	Successful responses (200–299)
+	Redirection messages (300–399)
+	Client error responses (400–499)
+	Server error responses (500–599)
+
+Informational responses:
+	100 Continue:
+	This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
+Successful responses:
+	200 OK
+	The request succeeded. The result meaning of "success" depends on the HTTP method:
+		GET: The resource has been fetched and transmitted in the message body.
+		HEAD: The representation headers are included in the response without any message body.
+		PUT or POST: The resource describing the result of the action is transmitted in the message body.
+		TRACE: The message body contains the request message as received by the server.
+Redirection messages:
+	301 Moved Permanently:
+		The URL of the requested resource has been changed permanently. The new URL is given in the response.
+Client error responses:
+	400 Bad Request
+		The server could not understand the request due to invalid syntax.
+	401 Unauthorized
+		Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". 
+		That is, the client must authenticate itself to get the requested response.
+Server error responses:
+	502 Bad Gateway
+		This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
+	511 Network Authentication Required
+		Indicates that the client needs to authenticate to gain network access.
+	504 Gateway Timeout
+		This error response is given when the server is acting as a gateway and cannot get a response in time.
+
+HTTP Methods:
+	i) GET
+	This method retrieves information from the given server using a given URI. GET request can retrieve the data. It can not apply other effects on the data.
+	ii) HEAD
+		This method is the same as the GET method. It is used to transfer the status line and header section only.
+	iii) POST
+		The POST request sends the data to the server. For example, file upload, customer information, etc. using the HTML forms.
+	iv) PUT
+		The PUT method is used to replace all the current representations of the target resource with the uploaded content.
+	v) DELETE
+		The DELETE method is used to remove all the current representations of the target resource, which is given by URI.
+	vi) CONNECT
+		This method establishes a tunnel to the server, which is identified by a given URI.
+	vii) OPTIONS
+		This method describes the options of communication for the target resource.
+
+	                                        GET	                                                        POST
+BACK                         -      button/Reload Harmless	              -    Data will be re-submitted (the browser should alert the user that the data are about to be re-submitted)
+Bookmarked	                  -    Can be bookmarked	                       -   Cannot be bookmarked
+Cached	                      -    Can be cached	                              Not cached                   
+Encoding type	         	-	 application/x-www-form-urlencoded	          application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
+History               	  	-	Parameters remain in browser history	      Parameters are not saved in browser history
+Restrictions on data length	  -   Yes, when sending data, the GET method adds 
+								the data to the URL; 
+                                 and the length of a URL is limited 
+								 (maximum URL length is 2048 characters)	 -  No restrictions
+Restrictions on data type	-	Only ASCII characters allowed				-	No restrictions. Binary data is also allowed
+Security	                -   GET is less secure compared to POST because 
+                               data sent is part of the URL
+
+                               Never use GET when sending passwords or other 
+							   sensitive information!	                       -  POST is a little safer than GET because the parameters are not stored in browser history or in web server logs
+Visibility	           -        Data is visible to everyone in the URL	    -    Data is not displayed in the URL
+
+
+Difference between PUT and POST
+			put                 post
+		
+   
+
+
