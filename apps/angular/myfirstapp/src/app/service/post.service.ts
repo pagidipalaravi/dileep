@@ -10,6 +10,7 @@ import { EmployeeBean } from '../bean/EmloyeeBean';
 export class postService {
   /*properties declaration are here*/
   baseUrl: string = "http://localhost:6010/employees/";
+  static createEmployee: any;
   /**constructor declartions are here */
   constructor(private http: HttpClient) { }
   /*methods declarations are here */

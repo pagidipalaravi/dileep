@@ -191,7 +191,7 @@ function getJobs() {
 	];
 	for (let i = 0; i < arrayOfJobs.length; i++) {
 		let jobId = arrayOfJobs[i].jobId;
-		let jobName = arrayOfJobs[i].jobName;
+		let jobName = arrayOfJobs[i].jobName; 
 		jobOptions = jobOptions + "<option value=" + jobId + ">" + jobName + "</option>";
 	}
 	console.log(jobOptions);

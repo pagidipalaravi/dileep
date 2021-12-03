@@ -63,7 +63,7 @@
             </div>
             <div class="column">
                 <label for="hireDate">Hire Date*</label><br>
-                <input type="date" id="hireDate" min="" max="2030-12-10" required>
+                <input type="date" id="hireDate" formControlName="curDate" class="form-control" min="{{currentUTCDate}}" max="2030-12-10" required>
             </div>
             <div class="column">
                 <div class="form-group">
@@ -88,11 +88,16 @@
             </div>
             <div class="column">
                 <label for="commisionPct">Commision Pct*</label><br>
-                <input type="text" id="commisionPct" required step="0.01" placeholder="0.00" class="form-control">
+                <input type="text" id="commisionPct" required step="0.01" placeholder="0.00" class="form-control" formControlName="commisionPct"
+                [ngClass]="{ 'is-invalid': submitted && formControls.commisionPct.errors }" />
+                <div *ngIf="submitted && formControls.commisionPct.errors" class="invalid-feedback">
+                    <div *ngIf="formControls.commisionPct.errors.required"> cannot be left blank</div>
+                    <div *ngIf="formControls.commisionPct.errors.pattern">Please, Enter salary</div>
+                </div>
             </div>
             <div class="column">
                 <label for="manager">Manager Name*</label><br>
-                <select id="manager" required type="search" class="form-select">
+                <select id="manager" required type="search" class="form-select" formControlName="manager">
                     <option value="cod114">madhu</option>
                     <option value="cod117">Ravi</option>
                     <option value="cod115">raghu</option>
@@ -101,7 +106,7 @@
             </div>
             <div class="column">
                 <label for="department">Department Name*</label><br>
-                <select id="department" required type="search" class="form-select">
+                <select id="department" required type="search" class="form-select" >
                     <option value="60">IT_Programer</option>
                     <option value="90">IT_Support</option>
                     <option value="90">manager</option>
@@ -113,8 +118,8 @@
                 </select>
             </div>
         </div>
-        <div class="Form-control">
-            <button class="btn" type="submit">submit</button>
+        <div class="Form-control text-center">
+            <button class="btn btn-default" type="submit">submit</button>
         </div>
     </form>
     <footer class="footer">

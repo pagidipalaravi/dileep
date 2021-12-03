@@ -1,4 +1,11 @@
  What is the difference between user and schema in Oracle Database?		
  How to export and import schema 11g to 21c?
  How to know when to enable or disable commit?
- 
+ user name:sys
+ system
+ how to describe the table structure?
+	decs is used to describe.
+How to create a table?
+	
+How to insert data in tables?
+How to select data from tables?

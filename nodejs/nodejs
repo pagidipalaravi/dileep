@@ -1,0 +1,23 @@
+what is nodejs?
+	Nodejs is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+	using the nodejs we can run application on server.
+	at the start it was used as client side language.
+	javascript is compiled and run in nodejs.
+	chrome developed and uses the v8  runtime engine to interpretor in the browser.
+	using it v8 nodejs was devoveloped which which will work as a javaScript compailer.
+what is use of npm in nodejs?
+	npm is the node packages manager which contain all the modules in inside npm 
+why we use nodejs for intalling angular?
+	nodejs which contain number of node module in that angular is one so if we want to create or run we use the nodejs?
+what is the serverless container arceture?
+	we can use nodejs as an server which is the open source
+What is difference between intrpritor and compailer?
+	compailer while compaile the whole program all program at a same time.
+	intritor compile line by line manner so it throw the error when we get an error.
+what is desigen time?
+	development of application is called  design time 
+what is compaile time?
+	When the browser compail it generate the new file at the time .
+How to install the nodejs?
+		first we need to go to offical site of nodejs which is nodejs.org.
+		inside the site we can see download option go into it and we can see diffrent versions and for difrent  

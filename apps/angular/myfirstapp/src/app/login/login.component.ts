@@ -2,13 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import { Validators,FormGroup, FormBuilder } from "@angular/forms";
 
 @Component({
-    selector: 'app-employee',
-    templateUrl: './employee.component.html',
-   styleUrls: ['./employee.component.css']
+    selector: 'app-login',
+    templateUrl: './login.component.html',
+   styleUrls: ['./login.component.css']
    
 })
 
-export class EmployeeComponent implements OnInit {
+export class loginComponent implements OnInit {
     myForm: FormGroup | any;
     submitted = false;
     constructor(private formBuilder: FormBuilder) {}

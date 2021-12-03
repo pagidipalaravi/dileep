@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { createComponent } from './createemployee/create.component';
 import { EditemployeeComponent } from './editemployee/editemployee.component';
-import { EmployeeComponent } from './employee/employee.component';
+import { loginComponent } from './login/login.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TestComponent } from './test/test.component';
+import { ChildAComponent } from './child-a/child-a.component';
+import { ChaildBComponent } from './chaild-b/chaild-b.component';
+import { RoutingService } from './routing.service';
+import { AuthGuardGuard } from './auth-guard.guard';
 
 
 @NgModule({
@@ -17,9 +23,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     createComponent,
     EditemployeeComponent,
-    EmployeeComponent,
+    loginComponent,
     ViewemployeeComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent,
+    TestComponent,
+    ChildAComponent,
+    ChaildBComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [RoutingService,AuthGuardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
