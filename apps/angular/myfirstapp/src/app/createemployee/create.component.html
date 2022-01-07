@@ -1,5 +1,5 @@
 <h1>Employee Form</h1>
-<div class="employeeForm">
+<div class="employeeForm fluid-container">
     <form class="form-floating" [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="row">
             <div class="column">
@@ -79,7 +79,7 @@
             </div>
             <div class="column">
                 <label for="job">Job*</label><br>
-                <select type="text" id="job" type="search" class="form-select">
+                <select type="text" id="job" type="search" class="form-select" formControlName="job">
                     <option value="100">IT_PROG</option>
                     <option value="101">AD_VP</option>
                     <option value="102">FI_MGR</option>
@@ -106,7 +106,7 @@
             </div>
             <div class="column">
                 <label for="department">Department Name*</label><br>
-                <select id="department" required type="search" class="form-select" >
+                <select id="department" required type="search" class="form-select" formControlName="department">
                     <option value="60">IT_Programer</option>
                     <option value="90">IT_Support</option>
                     <option value="90">manager</option>
@@ -117,11 +117,8 @@
                     <option value="50">Frontend_developer</option>
                 </select>
             </div>
-        </div>
-        <div class="Form-control text-center">
-            <button class="btn btn-default" type="submit">submit</button>
-        </div>
+            <div class="Form-control column text-center">
+                <button class="btn btn-default " type="submit">submit</button>
+            </div>
+        </div>  
     </form>
-    <footer class="footer">
-        about
-    </footer>

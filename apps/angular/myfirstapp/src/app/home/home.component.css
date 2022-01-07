@@ -2,3 +2,21 @@
 #one{
     background-image: url('../../assets/images/color.jpg');
 }
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .count {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 40px system-ui;
+  }
+  .count::after {
+    content: counter(num);
+  }
+  .count:hover {
+    --num: 100;
+  }
+  
