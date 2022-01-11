@@ -19,7 +19,10 @@ import { AuthGuardGuard } from './auth-guard.guard';
 import { LoginserverService } from './loginserver.service';
 import { CreateDepartment } from './createdepartment/CreateDepartment.component';
 import {MessagingModule} from "@angular/fire/messaging";
- 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderChange, MatSliderModule } from '@angular/material/slider';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import {MessagingModule} from "@angular/fire/messaging";
     FormsModule,
     ReactiveFormsModule, 
     HttpClientModule,
-   MessagingModule
+   MessagingModule,
+   BrowserAnimationsModule,
+   NgxPaginationModule
+  
   ],
   providers: [RoutingService,AuthGuardGuard,LoginserverService],
   bootstrap: [AppComponent]

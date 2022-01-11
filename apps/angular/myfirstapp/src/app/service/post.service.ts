@@ -14,12 +14,16 @@ export class postService {
   /**constructor declartions are here */
   constructor(private http: HttpClient) { }
   /*methods declarations are here */
-  getEmployees(): Observable<Response> {
-      return this.http.get<Response>(this.baseUrl);
+  getEmployees(): Observable<any> {
+      return this.http.get<any>(this.baseUrl);
   }
   createEmployee(employee: EmployeeBean): Observable<Response> {
       const body = JSON.stringify(employee);
       console.log(body)
       return this.http.post<Response>(this.baseUrl, body);
   }
+  getEmployeesByDept():Observable<any>{
+    return this.http.get<any>("http://localhost:6010/employees/getEmployeeByDepartmentId/60")
+  }
+
 }
