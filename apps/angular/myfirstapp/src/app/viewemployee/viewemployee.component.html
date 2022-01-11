@@ -1,5 +1,10 @@
 
   <div>Employees</div>
+  <div class="input-group mb-3 w-50">
+    <span class="input-group-text">Search employee</span>
+    <input type="text" class="form-control"  [(ngModel)]="empId" placeholder="Enter EmployeeId" (change)="changeEmpId()">
+    <button type="submit" class="btn btn-success" (click)="find()">find</button>
+  </div>
   <table class="table table-striped table-responsive-xxl">
       <tr>
           <th scope="col">SI.No</th>
@@ -15,7 +20,7 @@
           <th scope="col">ManagerId</th>
           <th scope="col">Action</th>
       </tr>
-      <tr *ngFor="let employee of employees.result; let i=index">
+      <tr *ngFor="let employee of employees; let i=index">
           <th scope="row">{{i+1}}</th>
           <td>{{employee.employeeId}}</td>
           <td>{{employee.firstName }}</td>
@@ -30,4 +35,13 @@
           <td><button class="btn-default">Edit</button></td>
           <td><button class="btn-default">Delete</button></td>
       </tr>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
   </table>

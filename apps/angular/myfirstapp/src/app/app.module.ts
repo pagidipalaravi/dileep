@@ -1,4 +1,4 @@
-import { APP_BOOTSTRAP_LISTENER, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,13 @@ import { ChildAComponent } from './child-a/child-a.component';
 import { ChaildBComponent } from './chaild-b/chaild-b.component';
 import { RoutingService } from './routing.service';
 import { AuthGuardGuard } from './auth-guard.guard';
+import { LoginserverService } from './loginserver.service';
+import { CreateDepartment } from './createdepartment/CreateDepartment.component';
+import {MessagingModule} from "@angular/fire/messaging";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderChange, MatSliderModule } from '@angular/material/slider';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -26,19 +33,25 @@ import { AuthGuardGuard } from './auth-guard.guard';
     loginComponent,
     ViewemployeeComponent,
     HomeComponent,
+    CreateDepartment,
     PageNotFoundComponent,
     TestComponent,
     ChildAComponent,
     ChaildBComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    ReactiveFormsModule, 
+    HttpClientModule,
+   MessagingModule,
+   BrowserAnimationsModule,
+   NgxPaginationModule
+  
   ],
-  providers: [RoutingService,AuthGuardGuard],
+  providers: [RoutingService,AuthGuardGuard,LoginserverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

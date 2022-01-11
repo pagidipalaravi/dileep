@@ -6,7 +6,7 @@ What is SPA?
 	SPA has only one html file and bunch of html templates, javascript and CSS files.
 	In SPA, all the html templates, css and java script files are rendered on the same page dynamically.
 	User navigates from one section to another section of the page by clicking on links or buttons without navigating to different pages.
-	IT looks like as a mobile application, they give better user experience.
+	It looks like as a mobile application, they give better user experience.
 ==
 What is difference between angularJs and angular?
 	Architecture
@@ -48,3 +48,4 @@ How to install angular?
 		npm install -g typescript
 	Install angular
 		npm install -g @angular/cli
+  

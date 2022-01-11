@@ -1,17 +1,42 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   </head>
-   <body>
-    <div class="topnav"> 
-        <a class="active" routerLink="/home">Home</a>
-        <a routerLink="/createemployee">Create Employee</a>
-        <a routerLink="/viewemployee">View Employee</a>
-        <a routerLink="/editemployee">Edit Employee</a>
-        <a routerLink="/login">login</a>
-        <a routerLink="/test">test</a>
-    </div> 
-    <router-outlet></router-outlet>
-  </body>  
-</html>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <a class="navbar-brand"  href="#">HRMS</a>
+     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       <li class="nav-item active">
+         <a class="nav-link" href="#"  routerLinkActive="active"> Home <span class="sr-only">(current)</span></a>
+       </li>      
+       <li  class="nav-item">
+         <a class="nav-link"  routerLink="/createemployee"  routerLinkActive="active">Create Employee</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " routerLink="/viewemployee"  routerLinkActive="active">View Employee</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " routerLink="/editemployee"  routerLinkActive="active">Edit Employee</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " routerLink="/login"  routerLinkActive="active">login</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " routerLink="/test"  routerLinkActive="active" >test</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link " routerLink="/department"  routerLinkActive="active" >department</a>
+      </li>      
+     </ul>               
+   </div>
+   </nav>
+  
+<router-outlet></router-outlet>
+<!-- Footer -->
+<footer class="page-footer font-small bg-black text-white fixed-bottom">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ">© 2020 Copyright:
+    <a href="#">HRMS</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

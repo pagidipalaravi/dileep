@@ -1,0 +1,39 @@
+
+  <div>Employees</div>
+  <div class="col-4">
+      <select class="form-control">
+          <option value="60">60</option>
+          <option value="30">30</option>
+      </select>
+  </div>
+  <table class="table table-striped table-responsive-xxl">
+      <tr>
+          <th scope="col">SI.No</th>
+          <th scope="col">EmployeeId</th>
+          <th scope="col">Firstname</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Email</th>
+          <th scope="col">PhoneNumber</th>
+          <th scope="col">Hiredate</th>
+          <th scope="col">salary</th>
+          <th scope="col">JobID</th>
+          <th scope="col">DepartmentId</th>
+          <th scope="col">ManagerId</th>
+          <th scope="col">Action</th>
+      </tr>
+      <tr *ngFor="let employee of employees; let i=index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{employee.employeeId}}</td>
+          <td>{{employee.firstName }}</td>
+          <td>{{employee.lastName | lowercase}}</td>
+          <td>{{employee.email | lowercase}}</td>
+          <td>{{employee.phoneNumber}}</td>
+          <td>{{employee.hireDate | date:'fullDate' | uppercase}}</td>
+          <td>{{employee.salary}}</td>
+          <td>{{employee.jobId}}</td>
+          <td>{{employee.managerId}}</td>
+          <td>{{employee.departmentId}}</td>
+          <td><button class="btn-default">Edit</button></td>
+          <td><button class="btn-default">Delete</button></td>
+      </tr> 
+  </table>

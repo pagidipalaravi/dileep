@@ -1,0 +1,15 @@
+what are the framework you worked?
+What are module in angular?
+what is @ngmodule?
+what is component?
+what are the bindings avilable in angular?
+How you communicate between the two component?
+What is dependency injection?
+did you created any costume libery?
+How run the angular application?
+How to update the anular application?
+How to deploy the angular aplication?
+What is figma?
+Did have any knowlage in cloud?
+
+
